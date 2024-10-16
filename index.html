@@ -4,8 +4,12 @@
     <title>P.C.E.A Kihumo Church Rironi Parish</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/img/pcea-logo/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/pcea-logo/favicon.svg" />
+    <link rel="shortcut icon" href="assets/img/pcea-logo/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/pcea-logo/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="P.C.E.A" />
+    <link rel="manifest" href="assets/img/pcea-logo/site.webmanifest" />
     <!-- Load Require CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font CSS -->
@@ -22,7 +26,7 @@
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand h1" href="index.html">
-                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <img src="assets/img/PCEA-logo.png" alt="p.c.e.a logo" width="34" height="28" class="d-inline-block align-text-top">
                 <span class="text-primary h4">P.C.E.A </span> <span class="text-dark h4">Kihumo Church</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,29 +40,44 @@
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/about-us.html">About Us</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/services-c.html">Services & Calendar</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/services_calendar.html">Services & Calendar</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Library
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/library.html">Sermons</a></li>
+                              <li><a class="dropdown-item" href="#">Confessions</a></li>
+                              <li><a class="dropdown-item" href="#">Songs</a></li>
+                              <li><a class="dropdown-item" href="#">Events</a></li>
+                              <li><a class="dropdown-item" href="#">Church Structure </a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Church Groups & Departments
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/childrens_ministry.html">Children Ministry</a></li>
+                              <li><a class="dropdown-item" href="/youth_ministry.html">Youth Ministry</a></li>
+                              <li><a class="dropdown-item" href="/womens_guild.html">Women's Guild</a></li>
+                              <li><a class="dropdown-item" href="/pcmf.html">P.C.M.F</a></li>
+                              <li><a class="dropdown-item" href="/tee_department.html">TEE Department</a></li>
+                              <li><a class="dropdown-item" href="/health_department.html">Health Department</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/sermons.html">Sermons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/m-gallery.html">Media Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/music.html">Music</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/gallery.html">Media Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="/contacts.html">Contacts</a>
                         </li>
                     </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
                 </div>
             </div>
         </div>
@@ -91,7 +110,7 @@
                                     and community. Whether you are visiting for the first time or have been part of our 
                                     congregation for years, we are grateful for the opportunity to share in fellowship with you.
                               </p>
-                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="#" role="button">Explore</a>
+                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="/index.html#explore_aya" role="button">Explore</a>
                             </div>
                         </div>
 
@@ -108,7 +127,7 @@
                                     all can deepen their understanding of scripture, growing in community, and serve with humanity. 
                                     We invite you to join us for worship and discover the peace and purpose that come from walking together in faith.
                                 </p>
-                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="#" role="button">More about us</a>
+                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="/about.html" role="button">More about us</a>
                             </div>
                         </div>
 
@@ -125,11 +144,11 @@
                                     </br> 9:00 am - 10:00am English Service
                                     </br> 10:30am - 13:00pm Kikuyu Service 
                                     </br>
-                                    Upcoming Events:
-                                    </br> None for now...
+                                    Please Check the Schedule for any 
+                                    </br>Upcoming Events:
 
                                 </p>
-                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="#" role="button">Church Schedule</a>
+                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="/services_calendar.html" role="button">Church Schedule</a>
                             </div>
                         </div>
 
@@ -150,10 +169,8 @@
     </div>
     <!-- End Banner Hero -->
 
-
-
     <!-- Start Service -->
-    <section class="service-wrapper py-3">
+    <section class="service-wrapper py-3" id="explore_aya">
         <div class="service-tag py-5 bg-secondary">
             <div class="col-md-12">
                 <ul class="nav d-flex justify-content-center">
@@ -161,13 +178,13 @@
                         <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300" href="#" data-filter=".project">All</a>
                     </li>
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".graphic">Graphics</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".news">News</a>
                     </li>
                     <li class="filter-btn nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".ui">UI/UX</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".get_involved">Get Involved</a>
                     </li>
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".branding">Branding</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".library">Library</a>
                     </li>
                 </ul>
             </div>
@@ -179,150 +196,174 @@
         <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui branding">
+            <div class="col-xl-3 col-md-4 col-sm-6 project news">
+                <a href="/services_calendar.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Sunday Service </span>
+                            <p class="card-text">Holy Communion Nov 24th 2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+            
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project news">
                 <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                     <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">UI/UX design</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Church News</span>
+                            <p class="card-text">Announcements</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+            <div class="col-xl-3 col-md-4 col-sm-6 project news">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Upcoming Events</span>
+                            <p class="card-text">Announcements</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project news">
                 <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                     <img class="card-img" src="./assets/img/services-02.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
                             <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Social Media</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <p class="card-text">Check Out Our Social Media to See Any New Activity.</p>
                         </div>
                     </div>
                 </a>
             </div><!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+            <div class="col-xl-3 col-md-4 col-sm-6 project get_involved">
+                <a href="/childrens_ministry.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                     <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Marketing</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Sunday School</span>
+                            <p class="card-text">Every Sunday At 9:00Am</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+            <div class="col-xl-3 col-md-4 col-sm-6 project get_involved">
+                <a href="/youth_ministry.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Youth</span>
+                            <p class="card-text">Please See our webpage for more information</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project get_involved">
+                <a href="/womens_guild.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Women's Guild</span>
+                            <p class="card-text">Please See our webpage for more information</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project get_involved">
+                <a href="/pcmf.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">P.C.M.F</span>
+                            <p class="card-text">Please See our webpage for more information</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project get_involved">
+                <a href="/womens_guild.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Women's Guild</span>
+                            <p class="card-text">Please See our webpage for more information</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project library">
+                <a href="/library.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                     <img class="card-img" src="./assets/img/services-04.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Graphic</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Confessions</span>
+                            <p class="card-text">Lords prayer, Apostals Creed etc</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-05.jpg" alt="Card image">
+            <div class="col-xl-3 col-md-4 col-sm-6 project library">
+                <a href="/library.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-04.jpg" alt="Card image">
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Digtal Marketing</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Songs</span>
+                            <p class="card-text">A few select popular songs for the service's.</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
-            <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-06.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Market Research</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-            <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-07.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Business</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-            <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-08.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Branding</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
+            
 
         </div>
     </section>
     <!-- End Service -->
-
-
-
-
-
-
-    <!-- Start View Work -->
-    <section class="bg-secondary">
-        <div class="container py-5">
-            <div class="row d-flex justify-content-center text-center">
-                <div class="col-lg-2 col-12 text-light align-items-center">
-                    <i class='display-1 bx bxs-box bx-lg'></i>
-                </div>
-                <div class="col-lg-7 col-12 text-light pt-2">
-                    <h3 class="h4 light-300">Great transformations successful</h3>
-                    <p class="light-300">Quis ipsum suspendisse ultrices gravida.</p>
-                </div>
-                <div class="col-lg-3 col-12 pt-4">
-                    <a href="#" class="btn btn-primary rounded-pill btn-block shadow px-4 py-2">View Our Work</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End View Work -->
      
     <!-- Start Footer -->
     <footer class="bg-secondary pt-4">
         <div class="container">
             <div class="row py-4">
-
                 <div class="col-lg-3 col-12 align-left">
                     <a class="navbar-brand" href="index.html">
-                        <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">Purple</span> <span class="text-light h5 semi-bold-600">Buzz</span>
-                    </a>
+                        <img src="assets/img/PCEA-logo.png" alt="p.c.e.a logo" width="34" height="28" class="d-inline-block align-text-top">
+                        <span class="text-light h5">P.C.E.A</span> <span class="text-light h5 semi-bold-600">Kihumo Church: Rironi Parish</span>                    </a>
                     <p class="text-light my-lg-4 my-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut.
+                        Thank you for visiting our website. Feel free to explore our social media, website resources and activities. See you next Sunday. 
                     </p>
                     <ul class="list-inline footer-icons light-300">
                         <li class="list-inline-item m-0">
@@ -331,7 +372,7 @@
                             </a>
                         </li>
                         <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                            <a class="text-light" target="_blank" href="https://www.youtube.com/">
                                 <i class='bx bxl-linkedin-square bx-md'></i>
                             </a>
                         </li>
@@ -340,36 +381,29 @@
                                 <i class='bx bxl-whatsapp-square bx-md'></i>
                             </a>
                         </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
-                                <i class='bx bxl-flickr-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.medium.com/">
-                                <i class='bx bxl-medium-square bx-md' ></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
+                    <h3 class="h4 pb-lg-3 text-light light-300">Our Church</h2>
                         <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">Home</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="/">Home</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="/about.html">About Us</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="/services_calendar.html">Services & Calendar</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="/library.html">Library</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="/gallery.html">Media Gallery</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="/contact.html">Contact</a>
                             </li>
                         </ul>
                 </div>
@@ -378,38 +412,34 @@
                     <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Branding</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Events</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Business</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Projects</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Marketing</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Awards</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Groups</a>
                         </li>
                         <li class="pb-2">
                             <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Social Media</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Graphic</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
+                    <h2 class="h4 pb-lg-3 text-light light-300">Our Contacts</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
                             <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">010-020-0340</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@company.com">info@company.com</a>
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@.com">info@.com</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
 
@@ -418,12 +448,12 @@
                 <div class="row pt-2">
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2021 P.C.E.A Kihumo Church: Rironi Parish Company. All Rights Reserved.
+                            © Copyright 2024 P.C.E.A Kihumo Church: Rironi Parish . All Rights Reserved.
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://UTU Websites.com/" target="_blank"><strong>UTU Websites</strong></a>
                         </p>
                     </div>
                 </div>
@@ -461,9 +491,9 @@
             });
         });
     </script>
-    <!-- Templatemo -->
+    <!-- custom js-->
     <script src="assets/js/templatemo.js"></script>
-    <!-- Custom -->
+    
     <script src="assets/js/custom.js"></script>
 
 </body>

@@ -1,0 +1,209 @@
+:root {
+  /*Global Colors*/
+  --primary-color: #ffffff;
+  /*Typography*/
+  --main-font-family: "Prata", serif;
+  --secondary-font-family: "Tangerine", cursive;
+  --main-font-size: 16px;
+  --line-height: 1.6;
+  --primary-font-color: #333;
+  /*Color Theme*/
+  --main-color-theme:#76B2E4;
+  --secondary-color-theme: #9C2259;
+  --third-color-theme: #4d6fac;
+  /*padding and margin*/
+  --primary-margin: 20px;
+}
+
+/* Ensure the body does not overflow */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Basic body styles, kept separate for easier encapsulation */
+.calendar-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Calendar container */
+.calendar {
+  position: relative;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Picture section */
+.kalenda__picture {
+  position: relative;
+  height: auto;
+  margin: 15px 15px 0  15px;
+  padding: 20px;
+  color: #fff;
+  background: #262626  no-repeat center / cover; /* Default background image */
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+}
+
+.kalenda__picture::before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1));
+  border-radius: 8px 8px 0 0;
+  margin: 10px;
+}
+
+.kalenda__picture h2, .kalenda__picture h3 {
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.kalenda__picture p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Calendar grid */
+#calendar-grid {
+  padding: 20px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255 0.51);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.53);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+/* Days (S, M, T, W, T, F, S) */
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: 600;
+  color: #262626;
+}
+
+/* Sundays with red font color */
+.calendar__day:nth-child(1) {
+  color: red;
+}
+
+/* Calendar days (1, 2, 3, ...) */
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: #262626;
+  cursor: pointer;
+  border-radius: 50%; /* Make circles */
+  transition: background-color 0.3s;
+}
+
+/* Styling for days with events */
+.calendar__number--event {
+  background-image: url(/images/20240812_012427_0005-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Styling for past event days */
+.calendar__number--event-past {
+  background-color: yellow;
+  text-decoration: line-through;
+  color: #9e9e9e; /* Optional: Change the color to indicate it's in the past */
+}
+
+/* Styling for the current day */
+.calendar__number--current {
+  border-radius: 0;
+  border: 2px solid black; /* Square border */
+}
+
+/* Styling for the current day with an event */
+.calendar__number--current-event {
+  background-color: blue;
+  border: 2px solid black;
+  color: white;
+}
+
+#calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+#calendar-controls button {
+  background-color: #009688;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+#calendar-controls button:hover {
+  background-color: #00796b;
+}
+
+
+.btn {
+  height: 4em;
+  width: 9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0px solid black;
+  cursor: pointer;
+  padding: 0;
+}
+
+.text {
+  font-size: 17px;
+  z-index: 1;
+  color: #000;
+  padding: 4px 12px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.705);
+  transition: all 0.5s ease;
+  border: 0.3px solid rgba(0, 0, 0, 0.664);
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens, reduce padding and font sizes */
+  .calendar__day, .calendar__number {
+      padding: 5px;
+      font-size: 0.8rem;
+  }
+
+  #calendar-picture {
+      height: auto;
+  }
+}
