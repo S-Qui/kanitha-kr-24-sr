@@ -20,7 +20,7 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #4232c2;
-  --bs-secondary: #6266ea;
+  --bs-secondary: #2D1B89;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -3740,8 +3740,8 @@ fieldset:disabled .btn {
 /* line 59, src/assets/scss/_buttons.scss */
 .btn-secondary {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #2D1B89;
+  border-color: #2D1B89;
 }
 
 /* line 25, src/assets/scss/mixins/_buttons.scss */
@@ -3780,8 +3780,8 @@ fieldset:disabled .btn {
 /* line 65, src/assets/scss/mixins/_buttons.scss */
 .btn-secondary:disabled, .btn-secondary.disabled {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #2D1B89;
+  border-color: #2D1B89;
 }
 
 /* line 59, src/assets/scss/_buttons.scss */
@@ -4108,15 +4108,15 @@ fieldset:disabled .btn {
 
 /* line 65, src/assets/scss/_buttons.scss */
 .btn-outline-secondary {
-  color: #6266ea;
-  border-color: #6266ea;
+  color: #2D1B89;
+  border-color: #2D1B89;
 }
 
 /* line 85, src/assets/scss/mixins/_buttons.scss */
 .btn-outline-secondary:hover {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #2D1B89;
+  border-color: #2D1B89;
 }
 
 /* line 91, src/assets/scss/mixins/_buttons.scss */
@@ -4129,8 +4129,8 @@ fieldset:disabled .btn {
 .btn-check:checked + .btn-outline-secondary,
 .btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #2D1B89;
+  border-color: #2D1B89;
 }
 
 /* line 105, src/assets/scss/mixins/_buttons.scss */
@@ -4142,7 +4142,7 @@ fieldset:disabled .btn {
 
 /* line 115, src/assets/scss/mixins/_buttons.scss */
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
-  color: #6266ea;
+  color: #2D1B89;
   background-color: transparent;
 }
 
@@ -7942,7 +7942,7 @@ fieldset:disabled .btn {
 
 /* line 2, src/assets/scss/helpers/_colored-links.scss */
 .link-secondary {
-  color: #6266ea;
+  color: #2D1B89;
 }
 
 /* line 6, src/assets/scss/helpers/_colored-links.scss */
@@ -8457,7 +8457,7 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .border-secondary {
-  border-color: #6266ea !important;
+  border-color: #2D1B89 !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
@@ -9505,7 +9505,7 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .text-secondary {
-  color: #6266ea !important;
+  color: #2D1B89 !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
@@ -9595,7 +9595,7 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .bg-secondary {
-  background-color: #6266ea !important;
+  background-color: #2D1B89 !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
