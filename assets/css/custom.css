@@ -34,3 +34,10 @@ Custom CSS for P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU 
   max-height: none;
   transition: all 0.3s ease-in-out;
 }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+  }
+}

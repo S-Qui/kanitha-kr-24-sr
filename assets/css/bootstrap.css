@@ -9550,7 +9550,10 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .text-muted {
-  color: #6c757d !important;
+  color: #000000 !important;
+  background-color: #f5deb35c;
+  border-radius: 20px;
+  padding: 10px !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
