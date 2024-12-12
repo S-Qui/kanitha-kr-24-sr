@@ -9551,9 +9551,14 @@ fieldset:disabled .btn {
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .text-muted {
   color: #000000 !important;
-  background-color: #f5deb35c;
   border-radius: 20px;
   padding: 10px !important;
+
+  background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */

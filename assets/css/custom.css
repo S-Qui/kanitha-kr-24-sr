@@ -8,22 +8,6 @@ Custom CSS for P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU 
   font-weight: 600px;
 }
 
-.scroll-container {
-  max-height: 750px;
-  overflow-y: scroll;
-  padding: 10px;
-  white-space: nowrap;
-}
-
-.scroll-container::-webkit-scrollbar {
-  width: 5px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 10px;
-}
-
 .container-library {
   display: block;
   padding: 16px;
