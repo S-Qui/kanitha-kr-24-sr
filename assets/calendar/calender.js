@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
   };
 
-  const defaultImage = '/assets/img/2024-06-23.jpg'; // Default background image
+  const defaultImage = '/assets/img/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png'; // Default background image
   let currentDate = new Date();
 
   function updateCalendar() {

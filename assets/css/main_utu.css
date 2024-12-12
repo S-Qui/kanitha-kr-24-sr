@@ -48,7 +48,7 @@ p, a {font-weight: 400;}
 #main_nav .nav-item .nav-link:hover {color: #fff;}
 /* Home */
 #index_banner {
-  background-image: url('/assets/img/2024-06-23.jpg');
+  background-image: url('/assets/img/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png');
   background-position: center center; background-size: cover;
   height: 100%;
   min-height: 60vh;
@@ -215,7 +215,7 @@ footer a.text-light:hover {
 }
 
 #pcmf_banner {
-  background-image: url('./../img/people-Image-by-Phan-Minh-Cuong-An.jpg');
+  background-image: url('./../img/open-Image-by-Jude-Joshua.jpg');/* by Jude Joshua from Pixabay - https://pixabay.com/photos/open-bible-hand-book-religion-343297/*/
 }
 
 #tee_banner {
