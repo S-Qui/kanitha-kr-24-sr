@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const calendarGrid = document.getElementById('calendar-grid');
+  const calendarGrid = document.getElementById('kalenda-grid');
   const calendarMonth = document.getElementById('kalenda-month');
   const calendarDate = document.getElementById('kalenda-date');
   const calendarEvent = document.getElementById('calendar-event');
-  const calendarPicture = document.getElementById('calendar-picture');
+  const calendarPicture = document.getElementById('kalenda-picture');
   const prevMonthButton = document.getElementById('prev-month');
   const nextMonthButton = document.getElementById('next-month');
 
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Add day headers (Sunday to Saturday)
       days.forEach(day => {
           const dayDiv = document.createElement('div');
-          dayDiv.className = 'calendar__day';
+          dayDiv.className = 'kalenda__day';
           dayDiv.textContent = day;
           calendarGrid.appendChild(dayDiv);
       });
@@ -99,27 +99,27 @@ document.addEventListener('DOMContentLoaded', function () {
       const adjustedFirstDay = firstDay; // No need to shift, since Sunday is already first
       for (let i = 0; i < adjustedFirstDay; i++) {
           const emptyDiv = document.createElement('div');
-          emptyDiv.className = 'calendar__number';
+          emptyDiv.className = 'kalenda__number';
           calendarGrid.appendChild(emptyDiv);
       }
 
       // Add the actual days
       for (let i = 1; i <= lastDate; i++) {
           const dateDiv = document.createElement('div');
-          dateDiv.className = 'calendar__number';
+          dateDiv.className = 'kalenda__number';
           dateDiv.textContent = i;
           const fullDate = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
 
           dateDiv.addEventListener('click', () => updateEventDetails(fullDate));
 
           if (events[fullDate]) {
-              dateDiv.classList.add('calendar__number--event'); // Highlight days with events
+              dateDiv.classList.add('kalenda__number--event'); // Highlight days with events
           }
 
           if (i === currentDate.getDate() && month === new Date().getMonth() && year === new Date().getFullYear()) {
-              dateDiv.classList.add('calendar__number--current');
+              dateDiv.classList.add('kalenda__number--current');
               if (events[fullDate]) {
-                  dateDiv.classList.add('calendar__number--current-event');
+                  dateDiv.classList.add('kalenda__number--current-event');
               }
               updateEventDetails(fullDate);
           }

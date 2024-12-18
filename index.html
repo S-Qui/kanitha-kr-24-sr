@@ -20,7 +20,25 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
+<!--
+Children Ministry:
+1. Church School
+2. Brigade
+Youth Ministry:
+3. Youth
+Others:
+4. Woman's Guild 
+5. P.C.M.F
+6. Christian Education
+7. Health
+8. Evangelism
+9. J.P.R.C
+10. T.E.E
+11. Music Ministry
 
+COMMITTEES:
+1. Local Church Committee 
+2. Development Committee-->
 <body>
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
@@ -47,27 +65,34 @@
                         </li>
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Library
                             </a>
                                                         <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="/library.html">Confessions</a></li>
-                              <li><a class="dropdown-item" href="#">Songs</a></li>
+                              <li><a class="dropdown-item" href="#">Music Ministry</a></li>
                               <li><a class="dropdown-item" href="#">Events</a></li>
                               <li><a class="dropdown-item" href="#">Church Structure </a></li>
                             </ul>
                           </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Church Groups & Departments
                             </a>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="/childrens_ministry.html">Children Ministry</a></li>
+                              <ol>
+                                <li><a class="dropdown-item" href="/church_school.html">Church School</a></li>
+                                <li><a class="dropdown-item" href="/brigade.html">Brigade</a></li>
+                              </ol>
                               <li><a class="dropdown-item" href="/youth_ministry.html">Youth Ministry</a></li>
                               <li><a class="dropdown-item" href="/womens_guild.html">Women's Guild</a></li>
                               <li><a class="dropdown-item" href="/pcmf.html">P.C.M.F</a></li>
                               <li><a class="dropdown-item" href="/tee_department.html">TEE Department</a></li>
                               <li><a class="dropdown-item" href="/christian_education.html">Christian Education</a></li>
+                              <li><a class="dropdown-item" href="/evangelism.html">Evangelism</a></li>
+                              <li><a class="dropdown-item" href="/jprc.html">J.P.R.C</a></li>
+                              <li><a class="dropdown-item" href="/music_ministry.html">Music Ministry</a></li>
                               <li><a class="dropdown-item" href="https://pcea.or.ke/departments/">Other Department's in P.C.E.A</a></li>
                             </ul>
                         </li>
@@ -87,7 +112,6 @@
     <!-- Start Banner Hero -->
     <div class="banner-wrapper bg-light">
         <div id="index_banner" class="banner-vertical-center-index container-fluid">
-
             <!-- Start slider -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
@@ -165,7 +189,6 @@
                 </a>
             </div>
             <!-- End slider -->
-
         </div>
     </div>
     <!-- End Banner Hero -->
@@ -174,16 +197,37 @@
     <section class="service-wrapper py-3">
         <div class="container-fluid pb-3">
             <div class="row">
-                <div class="service-header col-2 col-lg-3 text-end light-300">
-                    <i class='bx bx-gift h3 mt-1'></i>
-                </div>
-                <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
-                    <h2 class="h3 pb-4 typo-space-line">Theme</h2>
-                </div>
-            </div>
-            <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
-                To be a Great and Dynamic Godly Model Church for holistic Service in Pursuance of the Great Commission.
-            </br>
+                
+                <div class="card text-center">
+                    <div class="card-header">
+                      <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="true" href="#">Kikuyu </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="service-header col-2 col-lg-3 text-end light-300">
+                            <i class='bx bx-gift h3 mt-1'></i>
+                        </div>
+                        <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
+                            <h2 class="h3 pb-4 typo-space-line">Theme: <i>2024</i></h2>
+                        </div>
+                    </div>
+                    <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
+                        Jehovah arĩikaraga hamwe na inyui hĩndĩ iria
+                        ona inyui mũikarĩte hamwe nawe;
+                        na mũngĩmurongoria nĩmũrĩmũonaga;
+                        no mũngĩtigana nake-rĩ; o nake nĩekũmũtiga.
+                    </br>
+                        2 Maundu ma Matũkũ maTene 15:2b
+                       </br>
             </br>
                 <b>Service: Every Sunday</b>
                 </br>
@@ -191,6 +235,14 @@
                 </br>
                 Kikuyu: 10:30 AM
             </p>
+                    </div>
+                  </div>
+
+                
+            
+            
+            <div id="dailyVersesWrapper"></div>
+
         </div>
 
         <div class="service-tag py-5 bg-secondary">
@@ -200,7 +252,7 @@
                         <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300" href="#" data-filter=".project">All</a>
                     </li>
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".news">News</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".news">Updates</a>
                     </li>
                     <li class="filter-btn nav-item mx-lg-4">
                         <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".get_involved">Get Involved</a>
@@ -213,7 +265,8 @@
         </div>
 
     </section>
-
+    
+    
     <section class="container overflow-hidden py-5">
         <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
             <!-- Start Recent Work -->
@@ -236,7 +289,7 @@
                     <img class="card-img" src="./assets/img/chalk-Image-by-mijung.jpg" alt="Card image"><!--by mijung Park from Pixabay.jpg - https://pixabay.com/photos/chalk-colorful-dust-school-supply-4829602/-->
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Sunday School</span>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Church School</span>
                             <p class="card-text">Every Sunday At 9:00Am</p>
                         </div>
                     </div>
@@ -246,7 +299,7 @@
           
             <!-- Start Recent Work -->
             <div class="col-xl-3 col-md-4 col-sm-6 project news">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                <a href="/contacts.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                     <img class="card-img" src="./assets/img/phone-Image-by-Foundry-Co.jpg" alt="Card image"><!--by Foundry Co from Pixabay - https://pixabay.com/photos/phone-technology-mobile-internet-869669/-->
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
@@ -300,8 +353,6 @@
             </div>
             <!-- End Recent Work -->
 
-            
-
             <!-- Start Recent Work -->
             <div class="col-xl-3 col-md-4 col-sm-6 project library">
                 <a href="/library.html" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
@@ -322,21 +373,20 @@
                     <img class="card-img" src="./assets/img/hymn-book-Image-by-Wolfgang-Heubeck.jpg" alt="Card image"> <!--by Wolfgang Heubeck from Pixabay - https://pixabay.com/photos/hymn-book-a-book-to-sing-grades-468126/-->
                     <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                         <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Songs</span>
-                            <p class="card-text">A few select popular songs for the service's.</p>
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Music Ministry</span>
+                            <p class="card-text">A few select popular Music Ministry for the service's.</p>
                         </div>
                     </div>
                 </a>
             </div>
             <!-- End Recent Work -->
-
         </div>
     </section>
     <!-- End Service -->
 
     <!--Start Event Notice Board-->
     <section class="container overflow-hidden py-5">
-    <div class="col-sm-7 mx-auto">
+      <div class="col-sm-7 mx-auto">
         <header class="section-header text-center">
           <span class="h1 d-block">
             <span>Notice Board</span>
@@ -448,7 +498,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Our Church</h2>
+                    <h2 class="h4 pb-lg-3 text-light light-300">Our Church</h2>
                         <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
                                 <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="/">Home</a>
@@ -495,7 +545,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://UTU Websites.com/" target="_blank"><strong>UTU Websites</strong></a>
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://utuwebsites.netlify.app" target="_blank"><strong>ŮTŮ Websites</strong></a>
                         </p>
                     </div>
                 </div>
@@ -504,7 +554,6 @@
 
     </footer>
     <!-- End Footer -->
-
 
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -538,6 +587,7 @@
     
     <script src="assets/js/custom.js"></script>
 
-</body>
+    <script async defer src="https://dailyverses.net/get/verse.js?language=nkjv"></script>
 
+</body>
 </html>

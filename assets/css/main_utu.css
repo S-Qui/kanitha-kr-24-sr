@@ -1,5 +1,5 @@
 /*
-P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
+P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by ŮTŮ Websites
 
 ---------------------------------------------
 Table of contents
@@ -182,7 +182,7 @@ footer a.text-light:hover {
 }
 
 /*Extra Pages*/
-
+#music_banner,
 #youth_banner,
 #children_banner,
 #work_single_banner {
@@ -215,11 +215,15 @@ footer a.text-light:hover {
 }
 
 #pcmf_banner {
-  background-image: url('./../img/open-Image-by-Jude-Joshua.jpg');/* by Jude Joshua from Pixabay - https://pixabay.com/photos/open-bible-hand-book-religion-343297/*/
+  background-image: url('./../img/open-Image-by-Jude-Joshua.jpg');/*by Jude Joshua from Pixabay - https://pixabay.com/photos/open-bible-hand-book-religion-343297/*/
 }
 
 #tee_banner {
   background-image: url('./../img/hand-Image-by-Célio-Silveira.jpg');/*by Célio Silveira from Pixabay - https://pixabay.com/photos/hand-bible-religion-453220/*/
+}
+
+#music_banner {
+  background-image: url('./../img/hymn-book-Image-by-Wolfgang-Heubeck.jpg');/*by Wolfgang Heubeck from Pixabay - https://pixabay.com/photos/hymn-book-a-book-to-sing-grades-468126/*/
 }
 
 /*Event Notice Banner - homepage*/
@@ -414,7 +418,7 @@ input:checked ~ .content-test {
 .content_testimonial-1 .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://i.postimg.cc/RFBHkG46/diamond-Pest-Logo-small.jpg");
+  background-image: url("/assets/img/PCEA-logo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -501,7 +505,7 @@ label.label_testimonial-1:before {
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("https://i.postimg.cc/RFBHkG46/diamond-Pest-Logo-small.jpg");
+  background-image: url("/assets/img/PCEA-logo.png");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;

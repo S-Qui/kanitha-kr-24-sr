@@ -96,3 +96,5 @@ function cycleTestimonials(index) {
 }
 //run the function
 cycleTestimonials(0);
+
+

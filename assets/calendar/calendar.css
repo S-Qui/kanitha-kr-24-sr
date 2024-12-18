@@ -83,7 +83,7 @@ body {
 }
 
 /* Calendar grid */
-#calendar-grid {
+#kalenda-grid {
   padding: 20px;
   margin-bottom: 15px;
   margin-left: 15px;
@@ -99,7 +99,7 @@ body {
 }
 
 /* Days (S, M, T, W, T, F, S) */
-.calendar__day {
+.kalenda__day {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,12 +109,12 @@ body {
 }
 
 /* Sundays with red font color */
-.calendar__day:nth-child(1) {
+.kalenda__day:nth-child(1) {
   color: red;
 }
 
 /* Calendar days (1, 2, 3, ...) */
-.calendar__number {
+.kalenda__number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,8 +125,13 @@ body {
   transition: background-color 0.3s;
 }
 
+.kalenda__number:hover {
+  background-color: lightblue;
+
+}
+
 /* Styling for days with events */
-.calendar__number--event {
+.kalenda__number--event {
   background-image: url(/images/20240812_012427_0005-removebg-preview.png);
   background-size: cover;
   background-position: center;
@@ -134,33 +139,40 @@ body {
 }
 
 /* Styling for past event days */
-.calendar__number--event-past {
+.kalenda__number--event-past {
   background-color: yellow;
   text-decoration: line-through;
   color: #9e9e9e; /* Optional: Change the color to indicate it's in the past */
 }
 
 /* Styling for the current day */
-.calendar__number--current {
-  border-radius: 0;
+.kalenda__number--current {
+  border-radius: 50%;
   border: 2px solid black; /* Square border */
+  
 }
 
+.kalenda__number--current:hover {
+  color: white;
+  font-weight: bold;
+}
+
+
 /* Styling for the current day with an event */
-.calendar__number--current-event {
+.kalenda__number--current-event {
   background-color: blue;
   border: 2px solid black;
   color: white;
 }
 
-#calendar-controls {
+#kalenda-controls {
   display: flex;
   justify-content: space-between;
   margin: 10px 20px;
 }
 
-#calendar-controls button {
-  background-color: #009688;
+#kalenda-controls button {
+  background-color: #0a0096;
   border: none;
   color: #fff;
   padding: 5px 10px;
@@ -168,8 +180,8 @@ body {
   border-radius: 50px;
 }
 
-#calendar-controls button:hover {
-  background-color: #00796b;
+#kalenda-controls button:hover {
+  background-color: #5c67c5;
 }
 
 
@@ -198,12 +210,12 @@ body {
 
 @media (max-width: 768px) {
   /* On smaller screens, reduce padding and font sizes */
-  .calendar__day, .calendar__number {
+  .kalenda__day, .kalenda__number {
       padding: 5px;
       font-size: 0.8rem;
   }
 
-  #calendar-picture {
+  #kalenda-picture {
       height: auto;
   }
 }

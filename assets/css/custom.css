@@ -1,5 +1,5 @@
 /*
-Custom CSS for P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
+Custom CSS for P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by ŮTŮ Websites
 /* Container that holds the Google Map */
 .aya-topic-title {
   padding-bottom: 5px;
@@ -25,3 +25,32 @@ Custom CSS for P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU 
       flex-wrap: wrap !important;
   }
 }
+
+/*Daily Bible Verse*/
+
+#dailyVersesWrapper {
+  font-size: 1rem;
+  font-style: italic;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+  background: #fffaf0;
+  color: #2a2a2a;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.dailyVerses.bibleVerse
+{
+margin-top: .5em;
+}
+
+.dailyVerses.bibleVerse a
+{
+font-weight: bold;
+}
+
+
+
+

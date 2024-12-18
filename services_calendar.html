@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/calendar/calendar.css">
 <!--
     
-P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
+P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by ŮTŮ Websites
 
 -->
 </head>
@@ -53,27 +53,34 @@ P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
                         </li>
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Library
                             </a>
                                                         <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="/library.html">Confessions</a></li>
-                              <li><a class="dropdown-item" href="#">Songs</a></li>
+                              <li><a class="dropdown-item" href="#">Music Ministry</a></li>
                               <li><a class="dropdown-item" href="#">Events</a></li>
                               <li><a class="dropdown-item" href="#">Church Structure </a></li>
                             </ul>
                           </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Church Groups & Departments
                             </a>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="/childrens_ministry.html">Children Ministry</a></li>
+                              <ol>
+                                <li><a class="dropdown-item" href="/church_school.html">Church School</a></li>
+                                <li><a class="dropdown-item" href="/brigade.html">Brigade</a></li>
+                              </ol>
                               <li><a class="dropdown-item" href="/youth_ministry.html">Youth Ministry</a></li>
                               <li><a class="dropdown-item" href="/womens_guild.html">Women's Guild</a></li>
                               <li><a class="dropdown-item" href="/pcmf.html">P.C.M.F</a></li>
                               <li><a class="dropdown-item" href="/tee_department.html">TEE Department</a></li>
                               <li><a class="dropdown-item" href="/christian_education.html">Christian Education</a></li>
+                              <li><a class="dropdown-item" href="/evangelism.html">Evangelism</a></li>
+                              <li><a class="dropdown-item" href="/jprc.html">J.P.R.C</a></li>
+                              <li><a class="dropdown-item" href="/music_ministry.html">Music Ministry</a></li>
                               <li><a class="dropdown-item" href="https://pcea.or.ke/departments/">Other Department's in P.C.E.A</a></li>
                             </ul>
                         </li>
@@ -104,9 +111,8 @@ P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
     
     <section class="container py-5">
     <div class="container text-center">
-      <!-- Start Calender -->
       <div class="row">
-        
+      <!-- Start Calender -->  
         <div class="col">
          
     <div class="kalenda__picture" id="kalendaPicture" style="overflow:auto;">
@@ -114,86 +120,63 @@ P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
       <h3 id="kalenda-month">Month Loading...</h3>
       <div id="kalendaEvent"></div>
 
-        <div>
-        <button class="btn toggleMatukio" type="button">
-          <p class="text">All events</p>
-        </button>
-        </div>
-
     </div>
-    <div id="calendar-controls">
+    <div id="kalenda-controls">
       <button id="prev-month">Prev Month</button>
       <button id="next-month">Next Month</button>
     </div>
 
-    <section class="matukio-aya hidden-section" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out;">
-    <div class="card card-body" style="width: auto;">
-        <table style="width:auto">
-          <tr>
-            <th>
-              Time
-            </th>
-            <th>
-              Event
-            </th>
-          </tr>
-          <tr>
-            <td>
-              10:00AM Aug 10th
-            </td>
-            <td>
-             Event 1 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              10:00AM Aug 10th
-            </td>
-            <td>
-             Event 2 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              10:00AM Aug 10th
-            </td>
-            <td>
-             Event 3 
-            </td>
-          </tr>
-        </table>
-    </div>
-    </section>
-
-    <div id="calendar-grid"></div>  
+    <div id="kalenda-grid"></div>  
         </div>
-
+      <!-- End Calender -->
         <div class="col">
-          <p class="sehemu-aya" id="sehemu-aya">Elders of The Church</p>
-          <ul class="" style="margin-top: 5px; margin-bottom: 5px;">
-            <li>
-             Chairperson - Richard A  
-            </li>
-            <li>
-              Anna B
-            </li>
-            <li>
-              Florence C
-            </li>
-            <li>
-              Isaac D
-            </li>
-            <li>
-              Kevin E
-            </li>
-            <li>
-              Irene F
-            </li>
-          </ul>
+          <h3>PCEA Church Calendar</h3>
+          <table>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>Christian Education Sunday</td>
+              <td>3rd March, 2024</td>
+            </tr>
+            <tr>
+              <td>Thanks Giving Sunday</td>
+              <td>7th April, 2024</td>
+            </tr>
+            <tr>
+              <td>Youth Sunday</td>
+              <td>28th April, 2024</td>
+            </tr>
+            <tr>
+              <td>Women's Guild Sunday</td>
+              <td>2nd June, 2024</td>
+            </tr>
+            <tr>
+              <td>Brigade Sunday</td>
+              <td>11th August, 2024</td>
+            </tr>
+            <tr>
+              <td>Nendeni (Evangelism) Sunday</td>
+              <td>8th September, 2024</td>
+            </tr>
+            <tr>
+              <td>Health Sunday</td>
+              <td>13th October, 2024</td>
+            </tr>
+            <tr>
+              <td>P.C.M.F Sunday</td>
+              <td>10th November, 2024</td> 
+            </tr>
+            <tr>
+              <td>Church School Sunday</td>
+              <td>8th December, 2024</td>
+            </tr>
+          </table>
         </div>
      
       </div>
-      <!-- End Calender -->
+      
 
       <!--Start Event Notice Board-->
     <div class="col-sm-7 mx-auto">
@@ -210,24 +193,22 @@ P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
           <ul class="list">
             <li class="item">
               <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
-              <label class="label_testimonial-1" for="radio_testimonial-1">Diamond Pest Elimination</label>
+              <label class="label_testimonial-1" for="radio_testimonial-1">P.C.E.A Kihumo Church</label>
               <div class="content-test content_testimonial-1">
                 <span class="picto"></span>
-                <h1>Diamond Pest Elimination</h1>
-                <p>“The team really takes pride in their work. If I didn’t know any better I would think they actually worked for my company.”</p>
-                <p class="testimonialFrom">Bill, Owner</p>
-                <p class="testimonialState">Rochester, NY</p>
+                <h1>P.C.E.A Kihumo Church</h1>
+                <p>“No events upcoming: Regular service on Sunday”</p>
+                <p class="testimonialFrom">Notice from the Elders</p>
               </div>
             </li>
             <li class="item">
               <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
-              <label class="label_testimonial-2" for="radio_testimonial-2">A+ Handyman Service</label>
+              <label class="label_testimonial-2" for="radio_testimonial-2">Youth Ministry</label>
               <div class="content-test content_testimonial-2">
                 <span class="picto"></span>
-                <h1>A+ Handyman Service</h1>
-                <p>“Quite simply… the service offers prompt response time to my visitors and helps me to better know what type of project a potential customer wants.”</p>
+                <h1>Youth Ministry</h1>
+                <p>“”</p>
                 <p class="testimonialFrom">Bill, Owner</p>
-                <p class="testimonialState">Tucson, AZ</p>
                 <br>
               </div>
             </li>
@@ -282,11 +263,14 @@ P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
     <footer class="bg-secondary pt-4">
         <div class="container">
             <div class="row py-4">
-
-                <div class="col-lg-3 col-12 align-left">
                     <a class="navbar-brand" href="index.html">
                         <img src="assets/img/PCEA-logo.png" alt="p.c.e.a logo" width="34" height="28" class="d-inline-block align-text-top">
-                        <span class="text-light h5">P.C.E.A</span> <span class="text-light h5 semi-bold-600">Kihumo Church: Rironi Parish</span>                    </a>
+                        <span class="text-light h5">P.C.E.A</span> <span class="text-light h5 semi-bold-600">
+                          Kihumo Church: Rironi Parish
+                        </span>
+                    </a>
+                <div class="col-lg-3 col-12 align-left">
+                    
                     <p class="text-light my-lg-4 my-2">
                         Thank you for visiting our website. Feel free to explore our social media, website resources and activities. See you next Sunday. 
                     </p>
@@ -310,24 +294,24 @@ P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Our Church</h2>
-                        <ul class="list-unstyled text-light light-300">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Our Church</h2>
+                    <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">Home</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="/index.html">Home</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="/about.html">About Us</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="/services_calendar.html">Services & Calendar</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="/library.html">Library</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="/contacts.html">Contact</a>
                             </li>
-                        </ul>
+                    </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
@@ -355,7 +339,7 @@ P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by UTU Websites
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://UTU Websites.com/" target="_blank"><strong>UTU Websites</strong></a>
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://utuwebsites.netlify.app" target="_blank"><strong>ŮTŮ Websites</strong></a>
                         </p>
                     </div>
                 </div>
