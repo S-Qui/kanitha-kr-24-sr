@@ -20,7 +20,7 @@ lazySusan.addEventListener("touchend", (e) => {
   if (endX > startX && currentPosition > 1) {
     currentPosition--;  // Swipe right goes backward (previous)
   }
-  if (endX < startX && currentPosition < 5) {
+  if (endX < startX && currentPosition < 6) {
     currentPosition++;  // Swipe left goes forward (next)
   }
 

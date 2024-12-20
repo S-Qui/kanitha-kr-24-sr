@@ -244,7 +244,7 @@ main#lazy-susan {
   width: 100%;
   height: 300px;
   display: flex;
-  align-items: center;
+  align-items: center; /* Fix vertical centering */
   justify-content: center;
   overflow: hidden;
   transform-style: preserve-3d;
@@ -252,76 +252,49 @@ main#lazy-susan {
   --position: 1;
 }
 
-div.item {
+.lazy-susan-container a {
   position: absolute;
   width: 180px;
   height: 270px;
-  background-color: coral;
-  transition: transform 0.5s ease, z-index 0.5s ease;
-  transform: rotateY(calc(-10deg * (var(--offset) - var(--position)))) /* Reverse rotation direction */
-    translateX(calc(200px * (var(--offset) - var(--position)))) /* Reverse translateX for right-side start */;
+  transition: transform 0.3s ease, z-index 0.5s ease;
+  transform: rotateY(calc(-10deg * (var(--offset) - var(--position)))) 
+    translateX(calc(200px * (var(--offset) - var(--position)))); 
   z-index: calc(5 - abs(var(--offset) - var(--position)));
   transform-origin: center center;
-}
-
-div.item:hover {
-  transform: scale(1.1) rotateY(calc(-10deg * (var(--offset) - var(--position)))) /* Reverse rotation direction */
-    translateX(calc(200px * (var(--offset) - var(--position)))) /* Reverse translateX for right-side start */;
-}
-
-/* Assign offsets to items */
-div.item:nth-of-type(1) { --offset: 1; background-color: #90f1ef; }
-div.item:nth-of-type(2) { --offset: 2; background-color: #ff70a6; }
-div.item:nth-of-type(3) { --offset: 3; background-color: #ff9770; }
-div.item:nth-of-type(4) { --offset: 4; background-color: #ffd670; }
-div.item:nth-of-type(5) { --offset: 5; background-color: #e9ff70; }
-
-/* Navigation Controls */
-.kipande-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.kipande-controls input[type="radio"] {
-  display: none; /* Hide the radio buttons */
-}
-
-.kipande-controls label {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  background-color: white;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.kipande-controls input[type="radio"]:checked + label {
-  background-color: #007bff;
-  border-color: #007bff;
+.lazy-susan-container a:hover {
+  transform: scale(1.2) rotateY(calc(-10deg * (var(--offset) - var(--position)))) 
+    translateX(calc(200px * (var(--offset) - var(--position)))); 
+  z-index: 10;
 }
 
-/* Link inputs to carousel position */
-#pos1:checked ~ main#lazy-susan { --position: 1; }
-#pos2:checked ~ main#lazy-susan { --position: 2; }
-#pos3:checked ~ main#lazy-susan { --position: 3; }
-#pos4:checked ~ main#lazy-susan { --position: 4; }
-#pos5:checked ~ main#lazy-susan { --position: 5; }
+.lazy-susan-container a > .item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Assign offsets and individual styles */
+.lazy-susan-container a:nth-of-type(1) { --offset: 1; background-image: url('/assets/img/posters/Brigade-Week-2024-1091x1536.jpg'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(2) { --offset: 2; background-image: url('/assets/img/posters/children-Ministry-extract-1.jpg'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(3) { --offset: 3; background-image: url('/assets/img/posters/COMPREHENSIVE-MEDICAL-CHECKUP-FOR-MINISTERS-AND-HEAD.jpg'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(4) { --offset: 4; background-image: url('/assets/img/posters/PCEA-churchschool-programme-2024-5.8-x-8.3-in-21-1.jpg'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(5) { --offset: 5; background-image: url('/assets/img/posters/WhatsApp-Image-2024-05-16-at-15.04.46.jpeg'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(6) { --offset: 6; background-image: url('/assets/img/posters/WhatsApp-Image-2024-12-06-at-11.03.45.jpeg'); background-size: cover; background-position: center;}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  div.item {
+  .lazy-susan-container a {
     width: 150px;
     height: 225px;
   }
 }
 
 @media (max-width: 480px) {
-  div.item {
+  .lazy-susan-container a {
     width: 120px;
     height: 180px;
   }
