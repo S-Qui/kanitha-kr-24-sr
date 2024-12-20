@@ -15,8 +15,15 @@ lazySusan.addEventListener("touchstart", (e) => {
 
 lazySusan.addEventListener("touchend", (e) => {
   const endX = e.changedTouches[0].clientX;
-  if (endX < startX && currentPosition < 5) currentPosition++;
-  if (endX > startX && currentPosition > 1) currentPosition--;
+
+  // Change the logic so that swipe right goes backward and swipe left goes forward
+  if (endX > startX && currentPosition > 1) {
+    currentPosition--;  // Swipe right goes backward (previous)
+  }
+  if (endX < startX && currentPosition < 5) {
+    currentPosition++;  // Swipe left goes forward (next)
+  }
+
   document.querySelector(`#pos${currentPosition}`).checked = true;
   updatePosition();
 });

@@ -226,268 +226,6 @@ footer a.text-light:hover {
   background-image: url('./../img/hymn-book-Image-by-Wolfgang-Heubeck.jpg');/*by Wolfgang Heubeck from Pixabay - https://pixabay.com/photos/hymn-book-a-book-to-sing-grades-468126/*/
 }
 
-/* Event Notice Banner - homepage */
-#flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 400px;
-  max-width: 1000px;
-  margin: 15px 0;
-  background-image: url(/assets/img/bulletin-board-Image-by-Adrian.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.53);
-  flex-direction: column;
-  position: relative;
-}
-
-#left-zone, #right-zone {
-  display: flex;
-  flex: 1 0 auto;
-  width: 100%;
-}
-
-#left-zone {
-  height: 50%;
-}
-
-#left-zone .list {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  align-items: stretch;
-  margin: auto;
-  padding: 0;
-}
-
-.item input {
-  display: none;
-}
-
-label {
-  display: block;
-  opacity: 0.5;
-  text-align: center;
-  line-height: 50px;
-  position: relative;
-  padding: 0 10px;
-  white-space: normal;
-  flex-basis: auto;
-}
-
-label:hover {
-  opacity: 0.75;
-  cursor: pointer;
-}
-
-.label_testimonial-1, .label_testimonial-2, .label_testimonial-3, .label_testimonial-4 {
-  padding: 0 15px;
-}
-
-.content-test {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transform: translateY(100%);
-  width: 100%;
-  transition: transform 0.5s ease-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  pointer-events: none;
-}
-
-.content-test p {
-  max-width: 50%;
-  text-align: center;
-}
-
-#right-zone {
-  height: 50%;
-}
-
-input:checked ~ .content-test {
-  transform: translateY(0%);
-  opacity: 1;
-}
-
-@media (min-width: 480px) {
-  #flex-container {
-    flex-direction: row;
-    min-height: auto;
-    height: 400px;
-  }
-
-  #left-zone .list {
-    border-right: 2px solid #cccccc;
-  }
-
-  .content-test {
-    width: 65%;
-    transform: translateY(-100%);
-    pointer-events: auto;
-  }
-
-  #left-zone {
-    width: 35%;
-  }
-
-  #right-zone {
-    width: 65%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .item > label {
-    font-size: 1.3rem;
-  }
-}
-
-.notice-img {
-  width: inherit;
-}
-
-.content_testimonial-1 .picto, .content_testimonial-2 .picto, .content_testimonial-3 .picto, .content_testimonial-4 .picto {
-  height: 100px;
-  width: 100px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
-
-.content_testimonial-1 .picto {
-  background-image: url("/assets/img/PCEA-logo.png");
-}
-
-.content_testimonial-2 .picto {
-  background-image: url("https://i.postimg.cc/bsqXXKCV/a-Plus-Handyman-Logo.jpg");
-}
-
-.content_testimonial-3 .picto {
-  background-image: url("https://i.postimg.cc/zV7sq04z/mod-Movers-Logo.jpg");
-}
-
-.content_testimonial-4 .picto {
-  background-image: url("https://i.postimg.cc/4Y3rypTz/ak-Pest-Control-Logo.jpg");
-}
-
-.content_testimonial-1 h1, .content_testimonial-2 h1, .content_testimonial-3 h1, .content_testimonial-4 h1 {
-  text-align: center;
-}
-
-.content_testimonial-1 h1 { color: #d64541; }
-.content_testimonial-2 h1 { color: #f5d76e; }
-.content_testimonial-3 h1 { color: #00b16a; }
-.content_testimonial-4 h1 { color: #f27935; }
-
-.content-test h1:first-letter {
-  text-transform: uppercase;
-}
-
-input:checked ~ label {
-  opacity: 1;
-  animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-input:checked ~ label.label_testimonial-1 {
-  color: #d64541;
-  border-right: solid 4px #d64541;
-}
-
-input:checked ~ label.label_testimonial-2 {
-  color: #f5d76e;
-  border-right: solid 4px #f5d76e;
-}
-
-input:checked ~ label.label_testimonial-3 {
-  color: #00b16a;
-  border-right: solid 4px #00b16a;
-}
-
-input:checked ~ label.label_testimonial-4 {
-  color: #f27935;
-  border-right: solid 4px #f27935;
-}
-
-label.label_testimonial-1:before,
-label.label_testimonial-2:before,
-label.label_testimonial-3:before,
-label.label_testimonial-4:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 75% 75%;
-}
-
-label.label_testimonial-1:before {
-  background-image: url("/assets/img/PCEA-logo.png");
-}
-
-label.label_testimonial-2:before {
-  background-image: url("https://i.postimg.cc/bsqXXKCV/a-Plus-Handyman-Logo.jpg");
-}
-
-label.label_testimonial-3:before {
-  background-image: url("https://i.postimg.cc/zV7sq04z/mod-Movers-Logo.jpg");
-}
-
-label.label_testimonial-4:before {
-  background-image: url("https://i.postimg.cc/4Y3rypTz/ak-Pest-Control-Logo.jpg");
-}
-
-label:first-letter {
-  text-transform: uppercase;
-}
-
-.label_testimonial-1:hover, .label_testimonial-2:hover, .label_testimonial-3:hover, .label_testimonial-4:hover {
-  font-size: 1.2rem;
-  transition: font-size 0.5s;
-}
-
-.label_testimonial-1:hover {
-  background-image: linear-gradient(to right, #ffffff, #d64541a3);
-}
-
-.label_testimonial-2:hover {
-  background-image: linear-gradient(to right, #ffffff, #f5d76e59);
-}
-
-.label_testimonial-3:hover {
-  background-image: linear-gradient(to right, #ffffff, #00b16aa3);
-}
-
-.label_testimonial-4:hover {
-  background-image: linear-gradient(to right, #ffffff, #f27935a3);
-}
-
-p.testimonialState {
-  margin-top: -5px;
-  font-size: 0.8rem;
-  font-style: italic;
-  color: #808080d4;
-}
-
-p.testimonialFrom {
-  margin-top: 5px;
-  font-weight: bold;
-  color: #33475c;
-}
-
-
 /* Lazy Susan Styles */
 section.lazy-susan-container {
   display: flex;
@@ -504,7 +242,7 @@ section.lazy-susan-container {
 main#lazy-susan {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,15 +258,15 @@ div.item {
   height: 270px;
   background-color: coral;
   transition: transform 0.5s ease, z-index 0.5s ease;
-  transform: rotateY(calc(10deg * (var(--offset) - var(--position))))
-    translateX(calc(-200px * (var(--offset) - var(--position))));
+  transform: rotateY(calc(-10deg * (var(--offset) - var(--position)))) /* Reverse rotation direction */
+    translateX(calc(200px * (var(--offset) - var(--position)))) /* Reverse translateX for right-side start */;
   z-index: calc(5 - abs(var(--offset) - var(--position)));
   transform-origin: center center;
 }
 
 div.item:hover {
-  transform: scale(1.1) rotateY(calc(10deg * (var(--offset) - var(--position))))
-    translateX(calc(-200px * (var(--offset) - var(--position))));
+  transform: scale(1.1) rotateY(calc(-10deg * (var(--offset) - var(--position)))) /* Reverse rotation direction */
+    translateX(calc(200px * (var(--offset) - var(--position)))) /* Reverse translateX for right-side start */;
 }
 
 /* Assign offsets to items */
@@ -555,7 +293,7 @@ div.item:nth-of-type(5) { --offset: 5; background-color: #e9ff70; }
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 50%;
   background-color: white;
   cursor: pointer;

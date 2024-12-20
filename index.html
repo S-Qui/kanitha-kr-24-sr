@@ -12,6 +12,7 @@
     <link rel="manifest" href="assets/img/pcea-logo/site.webmanifest" />
     <!-- Load Require CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font CSS -->
     <link href="assets/css/boxicon.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -197,51 +198,71 @@ COMMITTEES:
     <section class="service-wrapper py-3">
         <div class="container-fluid pb-3">
             <div class="row">
-                
-                <div class="card text-center">
-                    <div class="card-header">
-                      <ul class="nav nav-tabs card-header-tabs">
+              <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="true" href="#">Kikuyu </a>
+                            <a class="nav-link active" id="kikuyu-tab" data-bs-toggle="tab" href="#kikuyu" role="tab" aria-controls="kikuyu" aria-selected="true">Kikuyu</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" id="english-tab" data-bs-toggle="tab" href="#english" role="tab" aria-controls="english" aria-selected="false">English</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body">
+                    </ul>
+                </div>
+                <div class="card-body tab-content">
+                    <div class="tab-pane fade show active" id="kikuyu" role="tabpanel" aria-labelledby="kikuyu-tab">
                         <div class="service-header col-2 col-lg-3 text-end light-300">
                             <i class='bx bx-gift h3 mt-1'></i>
                         </div>
                         <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
                             <h2 class="h3 pb-4 typo-space-line">Theme: <i>2024</i></h2>
                         </div>
+                        <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
+                            Jehovah arĩikaraga hamwe na inyui hĩndĩ iria
+                            ona inyui mũikarĩte hamwe nawe;
+                            na mũngĩmurongoria nĩmũrĩmũonaga;
+                            no mũngĩtigana nake-rĩ; o nake nĩekũmũtiga.
+                            <br>
+                            2 Maundu ma Matũkũ maTene 15:2b
+                            <br><br>
+                            <b>Service: Every Sunday</b>
+                            <br>
+                            English: 09:00 AM
+                            <br>
+                            Kikuyu: 10:30 AM
+                        </p>
                     </div>
-                    <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
-                        Jehovah arĩikaraga hamwe na inyui hĩndĩ iria
-                        ona inyui mũikarĩte hamwe nawe;
-                        na mũngĩmurongoria nĩmũrĩmũonaga;
-                        no mũngĩtigana nake-rĩ; o nake nĩekũmũtiga.
-                    </br>
-                        2 Maundu ma Matũkũ maTene 15:2b
-                       </br>
-            </br>
-                <b>Service: Every Sunday</b>
-                </br>
-                English: 09:00 AM
-                </br>
-                Kikuyu: 10:30 AM
-            </p>
+                    <div class="tab-pane fade" id="english" role="tabpanel" aria-labelledby="english-tab">
+                        <div class="service-header col-2 col-lg-3 text-end light-300">
+                            <i class='bx bx-gift h3 mt-1'></i>
+                        </div>
+                        <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
+                            <h2 class="h3 pb-4 typo-space-line">Theme: <i>2024</i></h2>
+                        </div>
+                        <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
+                            The Lord is with you when you are with Him;
+                            and if you seek Him, He will let you find Him;
+                            but if you forsake Him, He will forsake you.
+                            <br>
+                            2 Chronicles 15:2b
+                            <br><br>
+                            <b>Service: Every Sunday</b>
+                            <br>
+                            English: 09:00 AM
+                            <br>
+                            Kikuyu: 10:30 AM
+                        </p>
                     </div>
-                  </div>
+                </div>
+            </div>
+            
+            <div id="dailyVersesWrapper"></div>
+            </div>
 
                 
             
             
-            <div id="dailyVersesWrapper"></div>
+            
 
         </div>
 
@@ -265,8 +286,7 @@ COMMITTEES:
         </div>
 
     </section>
-    
-    
+
     <section class="container overflow-hidden py-5">
         <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
             <!-- Start Recent Work -->
@@ -384,8 +404,9 @@ COMMITTEES:
     </section>
     <!-- End Service -->
 
+    
     <!--Start Event Notice Board-->
-    <section class="container overflow-hidden py-5">
+    <section class="lazy-susan-container">
       <div class="col-sm-7 mx-auto">
         <header class="section-header text-center">
           <span class="h1 d-block">
@@ -394,61 +415,26 @@ COMMITTEES:
           <h2>Events & Announcements</h2>
         </header>
       </div>
-      
-      <div id="flex-container" class="testimonials">
-        <div id="left-zone">
-          <ul class="list">
-            <li class="item">
-              <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
-              <label class="label_testimonial-1" for="radio_testimonial-1">Diamond Pest Elimination</label>
-              <div class="content-test content_testimonial-1">
-                <span class="picto"></span>
-                <h1>Diamond Pest Elimination</h1>
-                <p>“The team really takes pride in their work. If I didn’t know any better I would think they actually worked for my company.”</p>
-                <p class="testimonialFrom">Bill, Owner</p>
-                <p class="testimonialState">Rochester, NY</p>
-              </div>
-            </li>
-            <li class="item">
-              <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
-              <label class="label_testimonial-2" for="radio_testimonial-2">A+ Handyman Service</label>
-              <div class="content-test content_testimonial-2">
-                <span class="picto"></span>
-                <h1>A+ Handyman Service</h1>
-                <p>“Quite simply… the service offers prompt response time to my visitors and helps me to better know what type of project a potential customer wants.”</p>
-                <p class="testimonialFrom">Bill, Owner</p>
-                <p class="testimonialState">Tucson, AZ</p>
-                <br>
-              </div>
-            </li>
-            <li class="item">
-              <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
-              <label class="label_testimonial-3" for="radio_testimonial-3">Mod Movers</label>
-              <div class="content-test content_testimonial-3">
-                <span class="picto"></span>
-                <h1>Mod Movers</h1>
-                <p>“I couldn’t believe it. I actually had to hire someone to help me keep up with the new business. I had no idea my website had so much value.”</p>
-                <p class="testimonialFrom">Marlene, Owner</p>
-                <p class="testimonialState">Monterey, CA</p>
-              </div>
-            </li>
-            <li class="item">
-              <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
-              <label class="label_testimonial-4" for="radio_testimonial-4">AK Pest Control</label>
-              <div class="content-test content_testimonial-4">
-                <span class="picto"></span>
-                <h1>AK Pest Control</h1>
-                <p>Great company to send leads. Very efficient and pleased with the services. We get lots of leads and that whats important. Support is also great from the managers/support. Thanks YPC Chat</p>
-                <p class="testimonialFrom">Mark, Owner</p>
-                <p class="testimonialState">Somerset, VA</p>
-                <br>
-              </div>
-            </li>
-          </ul>
+      <main id="lazy-susan">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+       </main>
+      <div class="kipande-controls">
+        <input type="radio" name="position" id="pos1" checked />
+          <label for="pos1"></label>
+        <input type="radio" name="position" id="pos2" />
+          <label for="pos2"></label>
+        <input type="radio" name="position" id="pos3" />
+          <label for="pos3"></label>
+        <input type="radio" name="position" id="pos4" />
+          <label for="pos4"></label>
+        <input type="radio" name="position" id="pos5" />
+          <label for="pos5"></label>
         </div>
-        <div id="right-zone"></div>
-      </div>
-    </section>
+    </section>                  
     <!--End Event Notice Board-->
 
     <!--Start Map-->
@@ -557,6 +543,7 @@ COMMITTEES:
 
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Load jQuery require for isotope -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Isotope -->
@@ -583,7 +570,7 @@ COMMITTEES:
         });
     </script>
     <!-- custom js-->
-    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/utuweb.js"></script>
     
     <script src="assets/js/custom.js"></script>
 
