@@ -1,3 +1,4 @@
+/*Habakkuk 2:2*/
 /*
 P.C.E.A Kihumo Church: Rironi Parish Designed and Managed by ŮTŮ Websites
 
@@ -10,8 +11,10 @@ Table of contents
 4. About
 5. Work
 6. Single Work
-7. Pricing
+7. Footer
 8. Contact
+9. Extra Pages
+10. Lazy Susan Styles
 --------------------------------------------- */
 
 html {font-family: 'Open Sans', sans-serif;}
@@ -40,12 +43,22 @@ p, a {font-weight: 400;}
   border-bottom:  5px solid #2D1B89;
   padding-top: .5em;
 }
+
 .typo-space-line-center::after {
   left: 50%;
   margin-left: -75px;
 }
 /* Main Nav */
 #main_nav .nav-item .nav-link:hover {color: #fff;}
+
+#main_nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
 /* Home */
 #index_banner {
   background-image: url('/assets/img/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png');
@@ -123,6 +136,7 @@ p, a {font-weight: 400;}
   background-position: center center; background-size: cover;
   height: 100%;
   width: 100%;
+  margin-top: 7.5rem;
 }
 .progress {
   height: 8px;
@@ -159,6 +173,15 @@ p, a {font-weight: 400;}
   border-radius: 20px;
   cursor: pointer;
 }
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
 /* Pricing */
 .pricing-list {
   margin-bottom: 1px;
@@ -171,25 +194,18 @@ p, a {font-weight: 400;}
 .pricing-horizontal {
   border-radius: 15px !important;
 }
-/* Contact */
-#floatingtextarea {
-  height: 150px
-}
-/* Footer */
-footer a.text-light:hover {
-  color: #bfbfbf !important;
-  transition-duration: 0.15s;
-}
 
 /*Extra Pages*/
 #music_banner,
 #youth_banner,
 #children_banner,
-#work_single_banner {
+#work_single_banner,
+#brigade_banner {
   background-position: center center; 
   background-size: cover;
   height: 100%;
   width: 100%;
+  margin-top: 7.5rem;
 }
 
 .banner-content {
@@ -208,6 +224,10 @@ footer a.text-light:hover {
 
 #children_banner {
   background-image: url('./../img/chalk-Image-by-mijung.jpg');/*by mijung Park from Pixabay.jpg - https://pixabay.com/photos/chalk-colorful-dust-school-supply-4829602/*/
+}
+
+#brigade_banner {
+  background-image: url('./../img/13th-Aug-23-brigade.jpg');/*by S.Rafiki - Dedication Ceremony for PCEA Kihumo Church*/
 }
 
 #youth_banner {
@@ -291,6 +311,14 @@ main#lazy-susan {
     width: 150px;
     height: 225px;
   }
+
+  #music_banner, 
+  #youth_banner, 
+  #children_banner, 
+  #work_single_banner, 
+  #brigade_banner {
+    margin-top: 3.5rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -298,4 +326,5 @@ main#lazy-susan {
     width: 120px;
     height: 180px;
   }
+
 }

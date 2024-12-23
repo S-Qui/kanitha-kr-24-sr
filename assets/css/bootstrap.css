@@ -12362,9 +12362,9 @@ fieldset:disabled .btn {
     margin-left: 1.5rem !important;
   }
   /* line 50, src/assets/scss/mixins/_utilities.scss */
-  .mx-xl-5 {
-    margin-right: 3rem !important;
-    margin-left: 3rem !important;
+  .mx-xl-4 {
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
   }
   /* line 50, src/assets/scss/mixins/_utilities.scss */
   .mx-xl-auto {

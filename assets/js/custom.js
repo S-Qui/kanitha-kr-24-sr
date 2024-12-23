@@ -1,12 +1,10 @@
-//<3 Hope your having a great day 
+// <3 Hope you're having a great day
 
 // JavaScript to close the navbar when clicking outside of it
-document.getElementById('menuToggle').addEventListener('click', function () {
+document.getElementById('menuToggle').addEventListener('click', function (event) {
   const navbarNav = document.getElementById('navbarNav');
   navbarNav.classList.toggle('collapse'); // Toggle navbar visibility
-
-  
-  this.classList.toggle('open');// Change button style to indicate the open state
+  event.stopPropagation(); // Prevent the document click listener from firing
 });
 
 // Close the menu if clicking outside
@@ -17,27 +15,32 @@ document.addEventListener('click', function (event) {
   // Close menu if clicking outside the navbar or the menu toggle button
   if (!navbar.contains(event.target) && !menuToggle.contains(event.target)) {
     navbar.classList.add('collapse'); // Collapse the menu
-    menuToggle.classList.remove('open'); // Reset the button icon
   }
 });
 
 // Sticky navbar on scroll
 let lastScrollPosition = 0;
-const navbar = document.getElementById('navbar');
+const navbar = document.getElementById('main_nav');
 
 window.addEventListener('scroll', function () {
   const currentScrollPosition = window.pageYOffset;
 
+  console.log('Current Scroll Position:', currentScrollPosition);
+  console.log('Last Scroll Position:', lastScrollPosition);
+
   if (currentScrollPosition > lastScrollPosition) {
     // Scrolling down
     navbar.style.top = '-90px'; // Adjust for navbar height
-  } else {
+    console.log('Hiding navbar (scrolling down)');
+  } else if (currentScrollPosition < lastScrollPosition) {
     // Scrolling up
     navbar.style.top = '0';
+    console.log('Showing navbar (scrolling up)');
   }
 
   lastScrollPosition = currentScrollPosition;
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
   var buttons = document.querySelectorAll(".ayaBtn");
