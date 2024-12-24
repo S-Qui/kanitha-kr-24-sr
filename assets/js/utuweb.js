@@ -1,8 +1,15 @@
-'use strict';
-$(document).ready(function() {
+"use strict";$(document).ready(function(){});
 
+document.addEventListener('DOMContentLoaded', function() {
+  var spinnerContainer = document.getElementById('spinner-container');
+  var content = document.getElementById('content');
 
+  window.addEventListener('load', function() {
+    spinnerContainer.style.display = 'none';
+    content.style.display = 'block';
+  });
 });
+
 
 // Swipe functionality for touch devices
 const lazySusan = document.querySelector("#lazy-susan");
