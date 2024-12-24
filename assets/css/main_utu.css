@@ -17,6 +17,14 @@ Table of contents
 10. Lazy Susan Styles
 --------------------------------------------- */
 /* Loader */
+.church-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 28rem;
+  text-align: center;
+}
+
 .spinner-container {
   display: flex;
   align-items: center;
@@ -31,8 +39,8 @@ Table of contents
 }
 
 .loader {
-  width: 20vw; /* Adjust width dynamically */
-  height: 20vw; /* Adjust height dynamically */
+  width: 30vw; /* Adjust width dynamically */
+  height: 30vw; /* Adjust height dynamically */
   font-size: 1rem; /* Scales with viewport size */
   position: relative;
   display: flex;
@@ -98,29 +106,37 @@ Table of contents
 /* Add the logo in the middle */
 .loader-logo {
   position: absolute;
-  width: 6vw; /* Adjust size dynamically */
+  width: 14vw; /* Adjust size dynamically */
   height: auto;
   z-index: 1;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .loader {
-    width: 30vw;
-    height: 30vw;
+  .church-name {
+    font-size: 1.2rem;
   }
-  .loader-logo {
-    width: 10vw;
-  }
-}
 
-@media (max-width: 480px) {
   .loader {
     width: 40vw;
     height: 40vw;
   }
   .loader-logo {
-    width: 15vw;
+    width: 18vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .church-name {
+    font-size: 1rem;
+  }
+
+  .loader {
+    width: 50vw;
+    height: 50vw;
+  }
+  .loader-logo {
+    width: 22vw;
   }
 }
 
