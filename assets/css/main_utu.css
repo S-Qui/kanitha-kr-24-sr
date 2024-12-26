@@ -52,7 +52,7 @@ Table of contents
   position: absolute;
   border-radius: 50%;
   border-style: solid;
-  animation: animate 3s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 .loader .face:nth-child(1) {
@@ -146,8 +146,40 @@ Table of contents
   }
 }
 
-html {font-family: 'Open Sans', sans-serif;}
-/* Typography */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+} 
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #0f0f67;
+  background: -webkit-radial-gradient(circle, #0f0f67 0%, #000000 100%);
+  background: radial-gradient(circle, #0f0f67 0%, #000000 100%);
+  color: white;
+}
+
+body, .navbar, .loader {
+  transition: background-color 0.3s, color 0.3s;
+}
+ 
+body.dark-mode .navbar {
+  background-color: #121212 !important; /* Very dark gray */
+  color: white !important;
+}
+
+body.dark-mode .spinner-container {
+  background-color: black;
+  color: white;
+}
+
+  /* Typography */
 p, a {font-weight: 400;}
 .h2 {font-size: 40px;}
 .h3 {font-size: 28px;}
@@ -236,6 +268,15 @@ p, a {font-weight: 400;}
   border-color: #000;
   transition: .5s;
 }
+
+.service-tag {
+  background: rgba(62, 54, 54, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+}
+
 .recent-work.card{
   border-radius: 10px !important;
 }
