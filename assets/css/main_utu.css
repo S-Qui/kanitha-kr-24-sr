@@ -157,28 +157,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark mode styles 
-body.dark-mode {
-  background: #0f0f67;
-  background: -webkit-radial-gradient(circle, #0f0f67 0%, #000000 100%);
-  background: radial-gradient(circle, #0f0f67 0%, #000000 100%);
-  color: white;
-}
-
-body, .navbar, .loader {
-  transition: background-color 0.3s, color 0.3s;
-}
- 
-body.dark-mode .navbar {
-  background-color: #121212 !important; /* Very dark gray 
-  color: white !important;
-}
-
-body.dark-mode .spinner-container {
-  background-color: black;
-  color: white;
-}
-*/
   /* Typography */
 p, a {font-weight: 400;}
 .h2 {font-size: 40px;}
