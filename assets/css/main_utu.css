@@ -280,12 +280,12 @@ p, a {font-weight: 400;}
   transition: .5s;
 }
 /* About */
-#work_banner {
+#about_banner {
   background-image: url('./../img/banner-bg-02.jpg');
   background-position: center center; background-size: cover;
   height: 100%;
   width: 100%;
-  margin-top: 7.5rem;
+  margin-top: 8%;
 }
 .progress {
   height: 8px;
@@ -345,16 +345,26 @@ footer a.text-light:hover {
 }
 
 /*Extra Pages*/
+#christian_education_banner,
+#church_school_banner,
+#contacts_banner,
+#evangelism_banner,
+#gallery_banner,
+#health_group_banner,
+#jprc_banner,
+#library_banner,
+#services_calendar_banner,
 #music_banner,
 #youth_banner,
 #children_banner,
 #work_single_banner,
-#brigade_banner {
+#brigade_banner,
+#womens_guild_banner {
   background-position: center center; 
   background-size: cover;
   height: 100%;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .banner-content {
@@ -365,6 +375,14 @@ footer a.text-light:hover {
   -webkit-backdrop-filter: blur(5px);
   padding: 10px;
   max-width: fit-content;
+}
+
+#services_calendar_banner {
+  background-image: url('./../img/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png');
+}
+
+#library_banner {
+  background-image: url('./../img/2023-02-12-removebg-preview.png');
 }
 
 #work_single_banner {

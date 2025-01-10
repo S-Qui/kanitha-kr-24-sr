@@ -24,6 +24,68 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin-top:10%; margin-bottom:  0; margin-left: auto; margin-right: auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(/assets/img/chalk-Image-by-mijung.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(/assets/img/13th-Aug-23-brigade.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+</style>
 <body>
 
   <!-- Loader -->
@@ -38,7 +100,7 @@
       <img src="/assets/img/Logo's/PCEA-logo.png" alt="Church Logo" class="loader-logo">
        <p class="church-name">P.C.E.A KIHUMO CHURCH</p>
     </div>
-  </div>
+    </div>
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
@@ -69,7 +131,7 @@
                             </a>
                                                         <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="/library.html">Confessions</a></li>
-                              <li><a class="dropdown-item" href="#">Music Ministry</a></li>
+                              <li><a class="dropdown-item" href="/music_ministry.html">Music Ministry</a></li>
                               <li><a class="dropdown-item" href="#">Events</a></li>
                               <li><a class="dropdown-item" href="#">Church Structure </a></li>
                             </ul>
@@ -108,206 +170,145 @@
     </nav>
     <!-- Close Header -->
 
-    <!-- Start Banner Hero -->
-    <div id="children_banner" class="banner-wrapper bg-light w-100 py-5">
-        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
-            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
-                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Children's Ministry</h1>
-                <h3 class="h4 pb-2 regular-400">'Let the children come to me.' Mark 10:14</h3>
-                <p class="banner-body pb-2 light-300">
-                    Teaching the Christian faith to the young ones. It is composed of 
-                    two pillars, Church School and Brigade, catering for both boys and girls.
-                </p>
-                <button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300"><a href="/childrens_ministry.html#cm-info">Learn More</a></button>
-                <button type="submit" class="btn rounded-pill btn-secondary text-light px-4 light-300"><a href="/contacts.html">Contact Us</a></button>
-            </div>
+    <div id="parallax-world-of-ugg">
+  
+      <section>
+        <div class="title">
+          <h3>Mark 10:14</h3>
+          <h1>Children's Ministry</h1>
         </div>
-    </div>
-    <!-- End Banner Hero -->
-
-    <!-- Start Our Work -->
-    <section class="container py-5">
-        <div class="row justify-content-center my-5">
-          <div class="col-sm-6 col-lg-4">
-            <ol style="list-style:decimal;">
-              <li>
-                <a href="/church_school.html">Church School</a>
-              </li>
-              <li>
-                <a href="/brigade.html">Brigade</a>
-              </li>
-            </ol>
+      </section>
+      
+      <section>
+          <div class="parallax-one">
+            <h2>About <br> The Children's Ministry</h2>
           </div>
+      </section>
+      
+      <section>
+        <div class="block">
+          <p>Teaching the Christian faith to the young ones. 
+            The Children's Ministry is composed of 
+            two pillars: <br> 
+            <ul>
+              <li>
+                <a href="/test.html#ChurchSchool">Church School</a>
+              </li>
+              <li>
+                <a href="/test.html/brigade">Brigade</a>
+              </li>
+            </ul>  
+             Catering for both boys and girls.
+            </p>
+          
+          <p class="margin-top-10">'Let the children come to me.' Mark 10:14</p>
+          <p class="line-break margin-top-10"></p>
 
-            <div class="filter-btns shadow-md rounded-pill text-center col-auto">
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4 active" data-filter=".project" href="#">All</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".guiding_principles" href="#">Guiding Principles</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".events" href="#">Events</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".gallery" href="#">Gallery</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".projects" href="#">Projects</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".graphic" href="#">Coloring Pages</a>
-            </div>
+          <h5 class="text-dark"><i>Vision</i></h5>
+          <p class="text-dark">
+            <span class="first-character sc">T</span>o teach, and make visible to all children the Love of God and their 
+              holistic identity to Christ and their relationship to others.
+          </p>
+          <br>
+          <h5 class="text-dark"><i>Mission</i></h5>
+          <p class="text-dark">
+            <span class="first-character sc">W</span>e exist to provide holistic Christian instruction, training, and 
+              capacity building for all children and their mentors in order to accept 
+              Christ as their savior, equip them to understand their Christian faith 
+              and apply it in their lives.
+          </p>
+          <br>
+          <h5 class="text-dark"><i>Core Values</i></h5>
+          <p class="text-dark">
+              <table>
+                  <tr>
+                    <td>Reverence <br>to God</td>
+                    <td>Authentic Christianity</td>
+                  </tr>
+                  <tr>
+                    <td>Integrity </td>
+                    <td>Trustworthiness, and honesty</td>
+                  </tr>
+                  <tr>
+                    <td>Accountability</td>
+                    <td>Faithful & transparency </td>
+                  </tr>
+                  <tr>
+                    <td>Responsibility</td>
+                    <td>Dedication, time consciousness & Commitment</td>
+                  </tr>
+                  <tr>
+                    <td>Self-Discipline </td>
+                    <td>Steadfastness</td>
+                  </tr>
+                  <tr>
+                    <td>Innovativeness </td>
+                    <td>Creativity, and pro-activeness </td>
+                  </tr>
+                  <tr>
+                    <td>Teamwork </td>
+                    <td>Harnessing team synergy</td>
+                  </tr>
+                  <tr>
+                    <td>Respect</td>
+                    <td>Value for others and their opinions</td>
+                  </tr>
+                  <tr>
+                    <td>Environment Consciousness</td>
+                    <td>Care for the environment</td>
+                  </tr>
+                  <tr>
+                    <td>Inclusivity</td>
+                    <td>Equal concern for all without discrimination</td>
+                  </tr>
+              </table>         
+          </p>
+          <p class="line-break margin-top-10"></p>
+          <p style="text-align: center;">For More information:
+          <ol>
+            <li>
+              <a href="/services_calendar.html">Calender</a>
+            </li>
+            <li>
+              Projects
+            </li>
+            <li>
+              <a href="/gallery.html"></a>Gallery
+            </li>
+          </ol>
+        </p>
         </div>
-
-        <div class="row projects gx-lg-5">
-
-            <!--Guiding Principles-->
-            <div class="col-sm-6 col-lg-4 text-decoration-none project guiding_principles">
-                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
-                    <img class="card-img-top" src="./assets/img/our-work-01.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark"><b>Vision</b></h5>
-                        <p class="card-text light-300 text-dark">
-                            To teach, and make visible to all children the Love of God and their 
-                            holistic identity to Christ and their relationship to others.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 text-decoration-none project guiding_principles">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-02.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark"><b>Mission</b></h5>
-                        <p class="card-text light-300 text-dark">
-                            We exist to provide holistic Christian instruction, training, and 
-                            capacity building for all children and their mentors in order to accept 
-                            Christ as their savior, equip them to understand their Christian faith 
-                            and apply it in their lives.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 text-decoration-none project guiding_principles">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-03.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark"><b>Core Values</b></h5>
-                        <p class="card-text light-300 text-dark">
-                            <table>
-                                <tr>
-                                  <td>Reverence to God</td>
-                                  <td>Authentic Christianity</td>
-                                </tr>
-                                <tr>
-                                  <td>Integrity </td>
-                                  <td>Trustworthiness, and honesty</td>
-                                </tr>
-                                <tr>
-                                  <td>Accountability</td>
-                                  <td>Faithful & transparency </td>
-                                </tr>
-                                <tr>
-                                  <td>Responsibility</td>
-                                  <td>Dedication, time consciousness & Commitment</td>
-                                </tr>
-                                <tr>
-                                  <td>Self-Discipline </td>
-                                  <td>Steadfastness</td>
-                                </tr>
-                                <tr>
-                                  <td>Innovativeness </td>
-                                  <td>Creativity, and pro-activeness </td>
-                                </tr>
-                                <tr>
-                                  <td>Teamwork </td>
-                                  <td>Harnessing team synergy</td>
-                                </tr>
-                                <tr>
-                                  <td>Respect</td>
-                                  <td>Value for others and their opinions</td>
-                                </tr>
-                                <tr>
-                                  <td>Environment Consciousness</td>
-                                  <td>Care for the environment</td>
-                                </tr>
-                                <tr>
-                                  <td>Inclusivity</td>
-                                  <td>Equal concern for all without discrimination</td>
-                                </tr>
-                            </table>         
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!--Events-->
-            <div href="/services_calendar.html" class="col-sm-6 col-lg-4 text-decoration-none project events">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-04.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">No Upcoming Events</h5>
-                        <p class="card-text light-300 text-dark">
-                          Please check the Calendar.
-                        </p>
-                        <span class="text-decoration-none text-primary light-300">
-                              Calender<i class='bx bxs-hand-right ms-1'></i>
-                          </span>
-                    </div>
-                </div>
-            </div>
-
-            <!--Gallery-->
-            <div class="col-sm-6 col-lg-4 text-decoration-none project gallery">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-05.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">No Photo's</h5>
-                        <p class="card-text light-300 text-dark">
-                          Coming soon
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!--Activities-->
-            <div class="col-sm-6 col-lg-4 text-decoration-none project activities">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-06.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">Projects</h5>
-                        <p class="card-text light-300 text-dark">
-                            None Active so far.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!--Graphic-->
-            <div class="col-sm-6 col-lg-4 text-decoration-none project graphic">
-              <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                  <img class="card-img-top" src="./assets/img/our-work-06.jpg" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title light-300 text-dark">No Coloring Pages</h5>
-                      <p class="card-text light-300 text-dark">
-                        Coming Soon...
-                      </p>
-                  </div>
-              </div>
-            </div>
-
+      </section>
+      
+      <section>
+        <div class="parallax-two">
+          <h2>Church School</h2>
         </div>
-
-        <div class="row">
-            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group me-2" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-secondary text-white">Previous</button>
-                </div>
-                <div class="btn-group me-2" role="group" aria-label="Second group">
-                    <button type="button" class="btn btn-light">1</button>
-                </div>
-                <div class="btn-group me-2" role="group" aria-label="Second group">
-                    <button type="button" class="btn btn-secondary text-white">2</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="Third group">
-                    <button type="button" class="btn btn-secondary text-white">Next</button>
-                </div>
-            </div>
+      </section>
+      
+      <section>
+        <div class="block">
+          <p><span class="first-character ny">B</span>reaking into the New York fashion world is no easy task. But by the early 2000's, UGG Australia began to take it by storm. The evolution of UGG from a brand that made sheepskin boots, slippers, clogs and sandals for an active, outdoor lifestyle to a brand that was now being touted as a symbol of a stylish, casual and luxurious lifestyle was swift. Much of this was due to a brand repositioning effort that transformed UGG into a high-end luxury footwear maker. As a fashion brand, UGG advertisements now graced the pages of Vogue Magazine as well as other fashion books. In the mid 2000's, the desire for premium casual fashion was popping up all over the world and UGG was now perfectly aligned with this movement.</p>
+          <p class="line-break margin-top-10"></p>
+          <p class="margin-top-10">Fueled by celebrities from coast to coast wearing UGG boots and slippers on their downtime, an entirely new era of fashion was carved out. As a result, the desire and love for UGG increased as people wanted to go deeper into this relaxed UGG experience. UGG began offering numerous color and style variations on their sheepskin boots and slippers. Cold weather boots for women and men and leather casuals were added with great success. What started as a niche item, UGG sheepskin boots were now a must-have staple in everyone's wardrobe. More UGG collections followed, showcasing everything from knit boots to sneakers to wedges, all the while maintaining that luxurious feel UGG is known for all over the world. UGG products were now seen on runways and in fashion shoots from coast to coast. Before long, the love spread even further.</p>
         </div>
-    </section>
-    <!-- End Our Work -->
+      </section>
+      
+      <section>
+        <div class="parallax-three">
+          <h2>Brigade</h2>
+        </div>
+      </section>
+      
+      <section>
+        <div class="block">
+          <p><span class="first-character atw">W</span>hen the New York fashion community notices your brand, the world soon follows. The widespread love for UGG extended to Europe in the mid-2000's along with the stylish casual movement and demand for premium casual fashion. UGG boots and shoes were now seen walking the streets of London, Paris and Amsterdam with regularity. To meet the rising demand from new fans, UGG opened flagship stores in the UK and an additional location in Moscow. As the love spread farther East, concept stores were opened in Beijing, Shanghai and Tokyo. UGG Australia is now an international brand that is loved by all. This love is a result of a magical combination of the amazing functional benefits of sheepskin and the heightened emotional feeling you get when you slip them on your feet. In short, you just feel better all over when you wear UGG boots, slippers, and shoes.</p>
+          <p class="line-break margin-top-10"></p>
+          <p class="margin-top-10">In 2011, UGG will go back to its roots and focus on bringing the active men that brought the brand to life back with new styles allowing them to love the brand again as well. Partnering with Super Bowl champion and NFL MVP Tom Brady, UGG will invite even more men to feel the love the rest of the world knows so well. UGG will also step into the world of high fashion with UGG Collection. The UGG Collection fuses the timeless craft of Italian shoemaking with the reliable magic of sheepskin, bringing the luxurious feel of UGG to high end fashion. As the love for UGG continues to spread across the world, we have continued to offer new and unexpected ways to experience the brand. The UGG journey continues on and the love for UGG continues to spread.</p>
+        </div>
+      </section>
+        
+      </div>
 
     <!-- Start Footer -->
     <footer class="bg-secondary pt-4">
