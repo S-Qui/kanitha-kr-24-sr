@@ -22,69 +22,17 @@
     <link rel="stylesheet" href="assets/css/main_utu.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <!--Timeline-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery.timeline-0.9.54.js"></script>
 </head>
-
 <style>
-  @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
-
-/* Override UGG site */
-#main {width: 100%; padding:0;}
-.content-asset p {margin:0 auto;}
-.breadcrumb {display:none;}
-
-/* Helpers */
+  /* Section - Parallax */
 /**************************/
-.margin-top-10 {padding-top:10px;}
-.margin-bot-10 {padding-bottom:10px;}
+#parallax-world-of-ugg .parallax-one {padding-top: 100px; padding-bottom: 100px; overflow: hidden; position: relative; width: 100%; background-image: url(/assets/img/chalk-Image-by-mijung.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 100px; padding-bottom: 100px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 100px; padding-bottom: 100px; overflow: hidden; position: relative; width: 100%; background-image: url(/assets/img/13th-Aug-23-brigade.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
-/* Typography */
-/**************************/
-#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
-#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
-#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
-#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
-.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
-
-.sc {color: #3b8595;}
-.ny {color: #3d3c3a;}
-.atw {color: #c48660;}
-
-/* Section - Title */
-/**************************/
-#parallax-world-of-ugg .title {background: white; padding: 60px; margin-top:10%; margin-bottom:  0; margin-left: auto; margin-right: auto; text-align:center;}
-#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
-
-/* Section - Block */
-/**************************/
-#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
-#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
-#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
-
-/* Section - Parallax */
-/**************************/
-#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(/assets/img/chalk-Image-by-mijung.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
-#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(/assets/img/13th-Aug-23-brigade.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-
-/* Extras */
-/**************************/
-#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
-
-/* Media Queries */
-/**************************/
-@media screen and (max-width: 959px) and (min-width: 768px) {
-  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
-}
-@media screen and (max-width: 767px) {
-  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
-  #parallax-world-of-ugg h2 {font-size:30px;}
-  #parallax-world-of-ugg .block {padding: 30px;}
-  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
-}
-@media screen and (max-width: 479px) {
-  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
-}
 </style>
 <body>
 
@@ -240,7 +188,7 @@
               <li>
                 <a href="/gallery.html"></a>Gallery
               </li>
-              <li><a href="">P.C.E.A Head Quarters: Brigade Department</a></li>
+              <li><a href="https://pcea.or.ke/" target="_blank">P.C.E.A Head Quarters</a></li>
             </ol>
           </p>
           </div>
@@ -248,15 +196,181 @@
         
         <section id="church-school-sec">
           <div class="parallax-two">
-            <h2>Church School</h2>
+            <h2>Clergy Of Our Church</h2>
           </div>
         </section>
         
         <section>
+          <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+              </div>
+              <h1 style="margin: 60px 0 10px 0; text-align: center; text-decoration: underline;">Reverends</h1>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/img/Rev.Mahinda praying for children wg oct 20241020.JPG" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: rgba(255, 255, 255, 0.459); color: black; border-radius: 5px;">
+                    <h5>Rev. John Maina Mahinda</h5>
+                    <p>2020-2024 ~ 5th Rironi Parish Minister</p>
+                    <p><i>Praying for the children attending the Womens's Guild Commemoration Day 20th October, 2024</i></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rev. Samuel Kimani Mutura</h5>
+                    <p>2020-2024 ~ 4th Rironi Parish Minister</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rev. Geoffrey Njenga Mungai</h5>
+                    <p>2020-2024 ~ 3rd Rironi Parish Minister</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rev. Alice Watheri Kimani</h5>
+                    <p>2020-2024 ~ 2nd Rironi Parish Minister</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>The Late Rev. Geoffrey Watuti</h5>
+                    <p>2020-2024 ~ 1st Rironi Parish Minister</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rev. George Kariuki</h5>
+                    <p>2020-2024 ~ Rironi Minister</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>rev. Alfred Mugendi Kanga</h5>
+                    <p>2020-2024 ~ Rironi Minister</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rev. Festus Mukuru Bore</h5>
+                    <p>2020-2024 ~ Rironi Minister</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rev. Henry Gacheru Kaira</h5>
+                    <p>2020-2024 ~ Rironi Minister</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           <div class="block">
-            <p><span class="first-character ny">B</span>reaking into the New York fashion world is no easy task. But by the early 2000's, UGG Australia began to take it by storm. The evolution of UGG from a brand that made sheepskin boots, slippers, clogs and sandals for an active, outdoor lifestyle to a brand that was now being touted as a symbol of a stylish, casual and luxurious lifestyle was swift. Much of this was due to a brand repositioning effort that transformed UGG into a high-end luxury footwear maker. As a fashion brand, UGG advertisements now graced the pages of Vogue Magazine as well as other fashion books. In the mid 2000's, the desire for premium casual fashion was popping up all over the world and UGG was now perfectly aligned with this movement.</p>
-            <p class="line-break margin-top-10"></p>
-            <p class="margin-top-10">Fueled by celebrities from coast to coast wearing UGG boots and slippers on their downtime, an entirely new era of fashion was carved out. As a result, the desire and love for UGG increased as people wanted to go deeper into this relaxed UGG experience. UGG began offering numerous color and style variations on their sheepskin boots and slippers. Cold weather boots for women and men and leather casuals were added with great success. What started as a niche item, UGG sheepskin boots were now a must-have staple in everyone's wardrobe. More UGG collections followed, showcasing everything from knit boots to sneakers to wedges, all the while maintaining that luxurious feel UGG is known for all over the world. UGG products were now seen on runways and in fashion shoots from coast to coast. Before long, the love spread even further.</p>
+            
+
+            <div id="mwaka-timeline">
+              <h1 style="margin: 60px 0 10px 0; text-align: center; text-decoration: underline;">P.C.E.A Kihumo Church Office</h1>
+              <ul id="mwaka-orodha">
+                <li><a href="#current" id="mwaka-o">Current</a></li>
+                <li><a href="#2021-2023" id="mwaka-o">2021-2023</a></li>
+                <li><a href="#2018-2020" id="mwaka-o">2018-2020</a></li>
+                <li><a href="#2015-2017" id="mwaka-o">2015-2017</a></li>
+                <li><a href="#2012-2014" id="mwaka-o">2012-2014</a></li>
+                <li><a href="#2009-2011" id="mwaka-o">2009-2011</a></li>
+                <li><a href="#2006-2008" id="mwaka-o">2006-2008</a></li>
+                <li><a href="#2002-2005" id="mwaka-o">2002-2005</a></li>          
+              </ul>
+              <ul id="orodha" style="padding-left: 0;">
+                <li id="current">
+                  <h1 id="mwaka-tag">Current Office</h1>
+                  <p>1. Elder Margaret Njoki Njunge: Chairlady</p>
+                  <p>2. Maryanne Nduta Waweru: Registrar(1yr)</p>
+                  <p>3. Caroline Wairimu Gichini: Registrar (current)</p>
+                  <p>4. Josphine Njoki Nyoro: Treasurer</p>
+                </li>
+         
+                <li id="2021-2023">
+                  <h1 id="mwaka-tag">Office Members</h1>
+                  <p>1. Elder Francis Kamiti Mungara: Chairman</p>
+                  <p>2. The Late Elizabeth Nyambura Muikama: Registrar (2yr)</p>
+                  <p>2. Maryanne Nduta Waweru: Registrar(1yr)</p>
+                  <p>3. Caroline Wairimu Gichini: Treasurer (1yr)</p>
+                  <p>4. Beth Njoki Wamwea: Treasurer (2yr)</p>
+                </li>
+
+                <li id="2018-2020">
+                  <h1 id="mwaka-tag">Office Members</h1>
+                  <p>1. Elder Margaret Njoki Njunge: Chairlady</p>
+                  <p>2. James Mburu Njenga: Registrar</p>
+                  <p>3. Beth Njoki Wamwea: Treasurer (1yr)</p>
+                  <p>4. Caroline Wairimu Gichini:  Treasurer (2yr)</p>
+                </li>
+
+                <li id="2015-2017">
+                  <h1 id="mwaka-tag">Office Members</h1>
+                  <p>1. Elder Francis Kamiti Mungara: Chairman</p>
+                  <p>2. Josphine Njoki Nyoro: Registrar</p>
+                  <p>3. Margaret Njoki Njunge: Treasurer</p>
+                </li>
+
+                <li id="2012-2014">
+                  <h1 id="mwaka-tag">Office Members</h1>
+                  <p>1. Elder John Karanja Nyingi: Chairman</p>
+                  <p>2. Eunice Wanjiku Kangethe: Registrar</p>
+                  <p>3. Rosemary Nyambutu Mbira: Treasurer</p>
+                </li>
+
+                <li id="2009-2011">
+                  <h1 id="mwaka-tag">Office Members</h1>
+                  <p>1. Elder Sarah Njeri Mwangi: Chairlady</p>
+                  <p>2. Margaret Njoki Njunge: Registrar</p>
+                  <p>3. Joyce Wanjiku Nyanjui: Treasurer</p>
+                </li>
+
+                <li id="2006-2008">
+                  <h1 id="mwaka-tag">Office Members</h1>
+                  <p>1. Elder Francis Kamiti Mungara: Chairman</p>
+                  <p>2. Beth Njoki Wamwea: Registrar</p>
+                  <p>3. Josphine Njoki Nyoro: Treasurer</p>
+                </li>
+                <li id="2002-2005">
+                  <h1 id="mwaka-tag">First Office Members</h1>
+                  <p>1. Elder Sarah Njeri Mwangi: Chairlady</p>
+                  <p>2. Eunice Wanjiku Kangethe: Registrar</p>
+                  <p>3. John Karanja Nyingi: Treasurer</p>
+                </li>
+              </ul>
+              <div id="grad_left"></div>
+              <div id="grad_right"></div>
+              <a href="#" id="next">+</a>
+              <a href="#" id="prev">-</a>
+            </div>
           </div>
         </section>
         
@@ -444,6 +558,276 @@
     <!-- custom js-->
     <script src="assets/js/utuweb.js"></script>
     <script src="assets/js/custom.js"></script>
+    <!--Timeline-->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+    $(function(){
+    			$().timeline({
+    				arrowKeys: 'true'
+    			})
+    		});
+    </script>
+    <script>
+      jQuery.fn.timeline = function(options){
+	// default plugin settings
+	settings = jQuery.extend({
+		orientation: 				'horizontal',		// value: horizontal | vertical, default to horizontal
+		containerDiv: 				'#mwaka-timeline',		// value: any HTML tag or #id, default to #timeline
+		datesDiv: 					'#mwaka-orodha',			// value: any HTML tag or #id, default to #dates
+		datesSelectedClass: 		'selected',			// value: any class, default to selected
+		datesSpeed: 				'normal',			// value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to normal
+		issuesDiv: 					'#orodha',			// value: any HTML tag or #id, default to #issues
+		issuesSelectedClass: 		'selected',			// value: any class, default to selected
+		issuesSpeed: 				'fast',				// value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to fast
+		issuesTransparency: 		0.2,				// value: integer between 0 and 1 (recommended), default to 0.2
+		issuesTransparencySpeed: 	500,				// value: integer between 100 and 1000 (recommended), default to 500 (normal)
+		prevButton: 				'#prev',			// value: any HTML tag or #id, default to #prev
+		nextButton: 				'#next',			// value: any HTML tag or #id, default to #next
+		arrowKeys: 					'false',			// value: true | false, default to false
+		startAt: 					1,					// value: integer, default to 1 (first)
+		autoPlay: 					'false',			// value: true | false, default to false
+		autoPlayDirection: 			'forward',			// value: forward | backward, default to forward
+		autoPlayPause: 				2000				// value: integer (1000 = 1 seg), default to 2000 (2segs)
+	}, options);
+
+	$(function(){
+		// setting variables... many of them
+		var howManyDates = $(settings.datesDiv+' li').length;
+		var howManyIssues = $(settings.issuesDiv+' li').length;
+		var currentDate = $(settings.datesDiv).find('a.'+settings.datesSelectedClass);
+		var currentIssue = $(settings.issuesDiv).find('li.'+settings.issuesSelectedClass);
+		var widthContainer = $(settings.containerDiv).width();
+		var heightContainer = $(settings.containerDiv).height();
+		var widthIssues = $(settings.issuesDiv).width();
+		var heightIssues = $(settings.issuesDiv).height();
+		var widthIssue = $(settings.issuesDiv+' li').width();
+		var heightIssue = $(settings.issuesDiv+' li').height();
+		var widthDates = $(settings.datesDiv).width();
+		var heightDates = $(settings.datesDiv).height();
+		var widthDate = $(settings.datesDiv+' li').width();
+		var heightDate = $(settings.datesDiv+' li').height();
+		// set positions!
+		if(settings.orientation == 'horizontal') {	
+			$(settings.issuesDiv).width(widthIssue*howManyIssues);
+			$(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/8-widthDate/5);
+			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
+		} else if(settings.orientation == 'vertical') {
+			$(settings.issuesDiv).height(heightIssue*howManyIssues);
+			$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/2-heightDate/2);
+			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
+		}
+		
+		$(settings.datesDiv+' a').click(function(event){
+			event.preventDefault();
+			// first vars
+			var whichIssue = $(this).text();
+			var currentIndex = $(this).parent().prevAll().length;
+			// moving the elements
+			if(settings.orientation == 'horizontal') {
+				$(settings.issuesDiv).animate({'marginLeft':-widthIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
+			} else if(settings.orientation == 'vertical') {
+				$(settings.issuesDiv).animate({'marginTop':-heightIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
+			}
+			$(settings.issuesDiv+' li').animate({'opacity':settings.issuesTransparency},{queue:false, duration:settings.issuesSpeed}).removeClass(settings.issuesSelectedClass).eq(currentIndex).addClass(settings.issuesSelectedClass).fadeTo(settings.issuesTransparencySpeed,1);
+			// prev/next buttons now disappears on first/last issue | bugfix from 0.9.51: lower than 1 issue hide the arrows | bugfixed: arrows not showing when jumping from first to last date
+			if(howManyDates == 1) {
+				$(settings.prevButton+','+settings.nextButton).fadeOut('fast');
+			} else if(howManyDates == 2) {
+				if($(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass)) {
+					$(settings.prevButton).fadeOut('fast');
+				 	$(settings.nextButton).fadeIn('fast');
+				} 
+				else if($(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass)) {
+					$(settings.nextButton).fadeOut('fast');
+					$(settings.prevButton).fadeIn('fast');
+				}
+			} else {
+				if( $(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass) ) {
+					$(settings.nextButton).fadeIn('fast');
+					$(settings.prevButton).fadeOut('fast');
+				} 
+				else if( $(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass) ) {
+					$(settings.prevButton).fadeIn('fast');
+					$(settings.nextButton).fadeOut('fast');
+				}
+				else {
+					$(settings.nextButton+','+settings.prevButton).fadeIn('slow');
+				}	
+			}
+			// now moving the dates
+			$(settings.datesDiv+' a').removeClass(settings.datesSelectedClass);
+			$(this).addClass(settings.datesSelectedClass);
+			if(settings.orientation == 'horizontal') {
+				$(settings.datesDiv).animate({'marginLeft':defaultPositionDates-(widthDate*currentIndex)},{queue:false, duration:'settings.datesSpeed'});
+			} else if(settings.orientation == 'vertical') {
+				$(settings.datesDiv).animate({'marginTop':defaultPositionDates-(heightDate*currentIndex)},{queue:false, duration:'settings.datesSpeed'});
+			}
+		});
+
+		$(settings.nextButton).bind('click', function(event){
+			event.preventDefault();
+			// bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+			var currentIndex = $(settings.issuesDiv).find('li.'+settings.issuesSelectedClass).index();
+			if(settings.orientation == 'horizontal') {
+				var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginLeft').substring(0,$(settings.issuesDiv).css('marginLeft').indexOf('px')));
+				var currentIssueIndex = currentPositionIssues/widthIssue;
+				var currentPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
+				var currentIssueDate = currentPositionDates-widthDate;
+				if(currentPositionIssues <= -(widthIssue*howManyIssues-(widthIssue))) {
+					$(settings.issuesDiv).stop();
+					$(settings.datesDiv+' li:last-child a').click();
+				} else {
+					if (!$(settings.issuesDiv).is(':animated')) {
+						// bugixed from 0.9.52: now the dates gets centered when there's too much dates.
+						$(settings.datesDiv+' li').eq(currentIndex+1).find('a').trigger('click');
+					}
+				}
+			} else if(settings.orientation == 'vertical') {
+				var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginTop').substring(0,$(settings.issuesDiv).css('marginTop').indexOf('px')));
+				var currentIssueIndex = currentPositionIssues/heightIssue;
+				var currentPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
+				var currentIssueDate = currentPositionDates-heightDate;
+				if(currentPositionIssues <= -(heightIssue*howManyIssues-(heightIssue))) {
+					$(settings.issuesDiv).stop();
+					$(settings.datesDiv+' li:last-child a').click();
+				} else {
+					if (!$(settings.issuesDiv).is(':animated')) {
+						// bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+						$(settings.datesDiv+' li').eq(currentIndex+1).find('a').trigger('click');
+					}
+				}
+			}
+			// prev/next buttons now disappears on first/last issue | bugfix from 0.9.51: lower than 1 issue hide the arrows
+			if(howManyDates == 1) {
+				$(settings.prevButton+','+settings.nextButton).fadeOut('fast');
+			} else if(howManyDates == 2) {
+				if($(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass)) {
+					$(settings.prevButton).fadeOut('fast');
+				 	$(settings.nextButton).fadeIn('fast');
+				} 
+				else if($(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass)) {
+					$(settings.nextButton).fadeOut('fast');
+					$(settings.prevButton).fadeIn('fast');
+				}
+			} else {
+				if( $(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass) ) {
+					$(settings.prevButton).fadeOut('fast');
+				} 
+				else if( $(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass) ) {
+					$(settings.nextButton).fadeOut('fast');
+				}
+				else {
+					$(settings.nextButton+','+settings.prevButton).fadeIn('slow');
+				}	
+			}
+		});
+
+		$(settings.prevButton).click(function(event){
+			event.preventDefault();
+			// bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+			var currentIndex = $(settings.issuesDiv).find('li.'+settings.issuesSelectedClass).index();
+			if(settings.orientation == 'horizontal') {
+				var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginLeft').substring(0,$(settings.issuesDiv).css('marginLeft').indexOf('px')));
+				var currentIssueIndex = currentPositionIssues/widthIssue;
+				var currentPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
+				var currentIssueDate = currentPositionDates+widthDate;
+				if(currentPositionIssues >= 0) {
+					$(settings.issuesDiv).stop();
+					$(settings.datesDiv+' li:first-child a').click();
+				} else {
+					if (!$(settings.issuesDiv).is(':animated')) {
+						// bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+						$(settings.datesDiv+' li').eq(currentIndex-1).find('a').trigger('click');
+					}
+				}
+			} else if(settings.orientation == 'vertical') {
+				var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginTop').substring(0,$(settings.issuesDiv).css('marginTop').indexOf('px')));
+				var currentIssueIndex = currentPositionIssues/heightIssue;
+				var currentPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
+				var currentIssueDate = currentPositionDates+heightDate;
+				if(currentPositionIssues >= 0) {
+					$(settings.issuesDiv).stop();
+					$(settings.datesDiv+' li:first-child a').click();
+				} else {
+					if (!$(settings.issuesDiv).is(':animated')) {
+						// bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+						$(settings.datesDiv+' li').eq(currentIndex-1).find('a').trigger('click');
+					}
+				}
+			}
+			// prev/next buttons now disappears on first/last issue | bugfix from 0.9.51: lower than 1 issue hide the arrows
+			if(howManyDates == 1) {
+				$(settings.prevButton+','+settings.nextButton).fadeOut('fast');
+			} else if(howManyDates == 2) {
+				if($(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass)) {
+					$(settings.prevButton).fadeOut('fast');
+				 	$(settings.nextButton).fadeIn('fast');
+				} 
+				else if($(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass)) {
+					$(settings.nextButton).fadeOut('fast');
+					$(settings.prevButton).fadeIn('fast');
+				}
+			} else {
+				if( $(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass) ) {
+					$(settings.prevButton).fadeOut('fast');
+				} 
+				else if( $(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass) ) {
+					$(settings.nextButton).fadeOut('fast');
+				}
+				else {
+					$(settings.nextButton+','+settings.prevButton).fadeIn('slow');
+				}	
+			}
+		});
+		// keyboard navigation, added since 0.9.1
+		if(settings.arrowKeys=='true') {
+			if(settings.orientation=='horizontal') {
+				$(document).keydown(function(event){
+					if (event.keyCode == 39) { 
+				       $(settings.nextButton).click();
+				    }
+					if (event.keyCode == 37) { 
+				       $(settings.prevButton).click();
+				    }
+				});
+			} else if(settings.orientation=='vertical') {
+				$(document).keydown(function(event){
+					if (event.keyCode == 40) { 
+				       $(settings.nextButton).click();
+				    }
+					if (event.keyCode == 38) { 
+				       $(settings.prevButton).click();
+				    }
+				});
+			}
+		}
+		// default position startAt, added since 0.9.3
+		$(settings.datesDiv+' li').eq(settings.startAt-1).find('a').trigger('click');
+		// autoPlay, added since 0.9.4
+		if(settings.autoPlay == 'true') { 
+			setInterval("autoPlay()", settings.autoPlayPause);
+		}
+	});
+};
+
+// autoPlay, added since 0.9.4
+function autoPlay(){
+	var currentDate = $(settings.datesDiv).find('a.'+settings.datesSelectedClass);
+	if(settings.autoPlayDirection == 'forward') {
+		if(currentDate.parent().is('li:last-child')) {
+			$(settings.datesDiv+' li:first-child').find('a').trigger('click');
+		} else {
+			currentDate.parent().next().find('a').trigger('click');
+		}
+	} else if(settings.autoPlayDirection == 'backward') {
+		if(currentDate.parent().is('li:first-child')) {
+			$(settings.datesDiv+' li:last-child').find('a').trigger('click');
+		} else {
+			currentDate.parent().prev().find('a').trigger('click');
+		}
+	}
+}      
+    </script>
 
 </body>
 

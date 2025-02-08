@@ -46,7 +46,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Events object
   const events = {
-      '2024-10-20': {
+    // P.C.E.A Church Calendar 2025
+      //Christian Education Sunday
+      '2025-03-02': {
+          events: [
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'Christian Education Sunday',
+                  subEvents: [
+                      'C.E Sermon by pending',
+                      'C.E Fundraiser Announcement'
+                  ]
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Thanks Giving Sunday
+      '2025-04-06': {
+          events: [
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'Thanks Giving Sunday',
+                  subEvents: [
+                      'T.G Sermon by pending',
+                      'T.G Fundraiser Announcement'
+                  ]
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Youth Sunday
+      '2025-04-27': {
           events: [
               {
                   time: '09:00 AM',
@@ -57,20 +97,317 @@ document.addEventListener('DOMContentLoaded', function () {
                   event: 'Kikuyu Communion',
                   title: 'Youth Sunday',
                   subEvents: [
-                      'Choir Performance',
-                      'Youth Sermon by John Doe',
+                      'Youth Sermon by pending',
                       'Youth Fundraiser Announcement'
                   ]
               }
           ],
           image: 'images/special-event.jpg'
       },
-      '2024-10-27': {
+      //Women's Guild Sunday
+      '2025-06-01': {
           events: [
-              { time: '09:00 AM', event: 'Special Service' }
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'Womens Guild Sunday',
+                  subEvents: [
+                      'W.G Sermon by pending',
+                      'W.G Fundraiser Announcement'
+                  ]
+              }
           ],
           image: 'images/special-event.jpg'
       },
+      //Brigade Sunday
+      '2025-08-10': {
+          events: [
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'Brigade Sunday',
+                  subEvents: [
+                      'Brigade Sermon by pending',
+                      'Brigade Fundraiser Announcement'
+                  ]
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Nendeni (Evangelism) Sunday
+      '2025-09-07': {
+          events: [
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'Nendeni (Evangelism) Sunday',
+                  subEvents: [
+                      'Nendeni Sermon by pending',
+                      'Nendeni Fundraiser Announcement'
+                  ]
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Health Sunday
+      '2025-10-12': {
+          events: [
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'Health Sunday',
+                  subEvents: [
+                      'Health Sermon by pending',
+                      'Health Fundraiser Announcement'
+                  ]
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //P.C.M.F Sunday
+      '2025-11-09': {
+          events: [
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'P.C.M.F Sunday',
+                  subEvents: [
+                      'P.C.M.F Sermon by pending',
+                      'P.C.M.F Fundraiser Announcement'
+                  ]
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Church School Sunday
+      '2025-12-07': {
+          events: [
+              {
+                  time: '09:00 AM',
+                  event: 'English Service'
+              },
+              {
+                  time: '10:30 AM',
+                  event: 'Kikuyu Communion',
+                  title: 'Church School Sunday',
+                  subEvents: [
+                      'C.S Sermon by pending',
+                      'C.S Fundraiser Announcement'
+                  ]
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+    
+    //Christian Liturgical Year
+      //Epiphany
+      '2025-01-06': {
+          events: [
+              { 
+                event: 'Epiphany ~ Christian Liturgical Year'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Ash Wednesday
+      '2025-02-05': {
+          events: [
+              { 
+                event: 'Ash Wednesday ~ Christian Liturgical Year'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Palm Sunday
+      '2025-04-13': {
+          events: [
+              { 
+                event: 'Ash Wednesday ~ Christian Liturgical Year'
+              },
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Holy Thursday
+      '2025-04-17': {
+          events: [
+              { 
+                event: 'Holy Thursday ~ Christian Liturgical Year'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Good Friday
+      '2025-04-18': {
+          events: [
+              { 
+                event: 'Good Friday ~ Christian Liturgical Year'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Easter Sunday
+      '2025-04-20': {
+          events: [
+              { 
+                event: 'Easter Sunday ~ Christian Liturgical Year'
+              },
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Easter Monday
+      '2025-04-21': {
+          events: [
+              { 
+                event: 'Easter Monday ~ Christian Liturgical Year'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Ascension Day
+      '2025-05-29': {
+          events: [
+              { 
+                event: 'Ascension Day ~ Christian Liturgical Year'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Pentecost
+      '2025-06-08': {
+          events: [
+              { 
+                event: 'Pentecost ~ Christian Liturgical Year'
+              },
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Trinity Sunday
+      '2025-06-15': {
+          events: [
+              { 
+                event: 'Trinity Sunday ~ Christian Liturgical Year'
+              },
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Advent
+      '2025-11-30': {
+          events: [
+              { 
+                event: 'Advent ~ Christian Liturgical Year'
+              },
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Christmas
+      '2025-12-25': {
+          events: [
+              { 
+                event: 'Ash Wednesday ~ Christian Liturgical Year'
+              },
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' }
+          ],
+          image: 'images/special-event.jpg'
+      },
+    
+    //Holidays in Kenya
+      //New Years Day
+      '2025-01-01': {
+          events: [
+              { 
+                event: 'New Years Day ~ Public Holiday'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Labour Day
+      '2025-05-01': {
+          events: [
+              { 
+                event: 'Labour Day ~ Public Holiday'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Madaraka Day
+      '2025-06-01': {
+          events: [
+              { 
+                event: 'Madaraka Day ~ Public Holiday'
+              },
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Utamaduni Day
+      '2025-10-10': {
+          events: [
+              { 
+                event: 'Utamaduni Day ~ Public Holiday'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Mashujaa Day 
+      '2025-10-20': {
+          events: [
+              { 
+                event: 'Mashujaa Day ~ Public Holiday'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Jamuhuri Day 
+      '2025-12-12': {
+          events: [
+              { 
+                event: 'Jamuhuri Day ~ Public Holiday'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      },
+      //Boxing Day 
+      '2025-12-26': {
+          events: [
+              { 
+                event: 'Boxing Day ~ Public Holiday'
+              }
+          ],
+          image: 'images/special-event.jpg'
+      }
+
   };
 
   const defaultImage = '/assets/img/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png'; // Default background image

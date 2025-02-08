@@ -121,7 +121,7 @@ body {
   height: 30px;
   color: #262626;
   cursor: pointer;
-  border-radius: 50%; /* Make circles */
+  border-radius: 20%; /* Make circles */
   transition: background-color 0.3s;
 }
 
@@ -132,10 +132,8 @@ body {
 
 /* Styling for days with events */
 .kalenda__number--event {
-  background-image: url(/images/20240812_012427_0005-removebg-preview.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  border-style: groove;
+  background-color: #0a00962c;
 }
 
 /* Styling for past event days */
@@ -147,7 +145,7 @@ body {
 
 /* Styling for the current day */
 .kalenda__number--current {
-  border-radius: 50%;
+  border-radius: 20%;
   border: 2px solid black; /* Square border */
   
 }
