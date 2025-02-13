@@ -241,11 +241,11 @@ document.addEventListener('DOMContentLoaded', function () {
       //Palm Sunday
       '2025-04-13': {
           events: [
-              { 
-                event: 'Ash Wednesday ~ Christian Liturgical Year'
-              },
               { time: '09:00 AM', event: 'English Service' },
-              { time: '10:30 AM', event: 'Kikuyu Service' }
+              { time: '10:30 AM', event: 'Kikuyu Service' },
+              { 
+                event: 'Palm Sunday ~ Christian Liturgical Year'
+              }
           ],
           image: 'images/special-event.jpg'
       },
@@ -299,48 +299,48 @@ document.addEventListener('DOMContentLoaded', function () {
       //Pentecost
       '2025-06-08': {
           events: [
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' },
               { 
                 event: 'Pentecost ~ Christian Liturgical Year'
-              },
-              { time: '09:00 AM', event: 'English Service' },
-              { time: '10:30 AM', event: 'Kikuyu Service' }
+              }
           ],
           image: 'images/special-event.jpg'
       },
       //Trinity Sunday
       '2025-06-15': {
           events: [
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' },
               { 
                 event: 'Trinity Sunday ~ Christian Liturgical Year'
-              },
-              { time: '09:00 AM', event: 'English Service' },
-              { time: '10:30 AM', event: 'Kikuyu Service' }
+              }
           ],
           image: 'images/special-event.jpg'
       },
       //Advent
       '2025-11-30': {
           events: [
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' },
               { 
                 event: 'Advent ~ Christian Liturgical Year'
-              },
-              { time: '09:00 AM', event: 'English Service' },
-              { time: '10:30 AM', event: 'Kikuyu Service' }
+              }
           ],
           image: 'images/special-event.jpg'
       },
       //Christmas
       '2025-12-25': {
           events: [
+              { time: '09:00 AM', event: 'English Service' },
+              { time: '10:30 AM', event: 'Kikuyu Service' },
               { 
                 event: 'Ash Wednesday ~ Christian Liturgical Year'
-              },
-              { time: '09:00 AM', event: 'English Service' },
-              { time: '10:30 AM', event: 'Kikuyu Service' }
+              }
           ],
           image: 'images/special-event.jpg'
       },
-    
+
     //Holidays in Kenya
       //New Years Day
       '2025-01-01': {
@@ -407,7 +407,6 @@ document.addEventListener('DOMContentLoaded', function () {
           ],
           image: 'images/special-event.jpg'
       }
-
   };
 
   const defaultImage = '/assets/img/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png'; // Default background image
