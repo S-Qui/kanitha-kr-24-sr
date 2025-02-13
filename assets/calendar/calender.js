@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
           ],
           image: 'images/special-event.jpg'
       },
-      //Women's Guild Sunday
+      //Womans Guild Sunday
       '2025-06-01': {
           events: [
               {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
               {
                   time: '10:30 AM',
                   event: 'Kikuyu Communion',
-                  title: 'Womens Guild Sunday',
+                  title: 'Womans Guild Sunday',
                   subEvents: [
                       'W.G Sermon by pending',
                       'W.G Fundraiser Announcement'
