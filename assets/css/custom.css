@@ -296,3 +296,68 @@ h2 {
 #prev.disabled {
   opacity: 0.2;
 }
+
+
+
+/*Footer*/
+.footer-pcea-kihumo-church-rironi-parish {
+  position: relative;
+  color: #fff;
+  padding: 2rem 0;
+  background-color: #4232C2; }
+  .footer-pcea-kihumo-church-rironi-parish .container {
+    position: relative; }
+  .footer-pcea-kihumo-church-rironi-parish h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.5; }
+  .footer-pcea-kihumo-church-rironi-parish h2 {
+    color: white;
+    }
+  .footer-pcea-kihumo-church-rironi-parish .links li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    display: block; }
+    .footer-pcea-kihumo-church-rironi-parish .links li a {
+      color: #ffffff; }
+      .footer-pcea-kihumo-church-rironi-parish .links li a:hover {
+        color: #fff; }
+  .footer-pcea-kihumo-church-rironi-parish .social li {
+    display: inline-block;
+    position: relative; }
+    .footer-pcea-kihumo-church-rironi-parish .social li a {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      background-color: #8186d5;
+      color: #fff; }
+      .footer-pcea-kihumo-church-rironi-parish .social li a > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+  .footer-pcea-kihumo-church-rironi-parish .footer-logo {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem; }
+  .footer-pcea-kihumo-church-rironi-parish .copyright {
+    color: #666873; }
+  .footer-pcea-kihumo-church-rironi-parish .cta {
+    -webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+    box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+    padding: 20px;
+    background-color: #16bd07;
+    top: -150px;
+    position: relative; }
+    .footer-pcea-kihumo-church-rironi-parish .cta h2, .footer-pcea-kihumo-church-rironi-parish .cta h3 {
+      line-height: 1.5; }
+    .footer-pcea-kihumo-church-rironi-parish .cta h3 {
+      font-size: 20px; }

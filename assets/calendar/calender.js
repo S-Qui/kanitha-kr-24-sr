@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   };
 
-  const defaultImage = '/assets/img/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png'; // Default background image
+  const defaultImage = '/assets/img/church-images/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png'; // Default background image
   let currentDate = new Date();
 
   function updateCalendar() {
