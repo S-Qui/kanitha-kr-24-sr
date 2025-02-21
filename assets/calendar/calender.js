@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   };
 
-  const defaultImage = '/assets/img/church-images/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png'; // Default background image
+  const defaultImage = 'https://lh3.googleusercontent.com/pw/AP1GczMeNdLcH4SK6bM7i_6K69tcd6rBkgq9Gs4VUa3oDB3LvW0zWtaQpuLfoR_YjggC8XZFUhUk76S96Uaz35Ent9ahFXs9_INSPEX9epvTZeK4KNtv3BNTyFix2y-P8USU9UnNmQb8BDhsbShQBH--tJ3G=w680-h460-s-no-gm?authuser=0'; // Default background image
   let currentDate = new Date();
 
   function updateCalendar() {

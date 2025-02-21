@@ -199,7 +199,7 @@ p, a {font-weight: 400;}
 
 /* Home */
 #index_banner {
-  background-image: url('/assets/img/church-images/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png');
+  background-image: url('https://lh3.googleusercontent.com/pw/AP1GczMeNdLcH4SK6bM7i_6K69tcd6rBkgq9Gs4VUa3oDB3LvW0zWtaQpuLfoR_YjggC8XZFUhUk76S96Uaz35Ent9ahFXs9_INSPEX9epvTZeK4KNtv3BNTyFix2y-P8USU9UnNmQb8BDhsbShQBH--tJ3G=w680-h460-s-no-gm?authuser=0');
   background-position: center center; background-size: cover;
   height: 100%;
   min-height: 60vh;
@@ -344,21 +344,9 @@ footer a.text-light:hover {
 }
 
 /*Extra Pages*/
-#christian_education_banner,
-#church_school_banner,
-#contacts_banner,
-#evangelism_banner,
-#gallery_banner,
-#health_group_banner,
-#jprc_banner,
-#library_banner,
-#services_calendar_banner,
-#music_banner,
-#youth_banner,
-#children_banner,
-#work_single_banner,
-#brigade_banner,
-#womens_guild_banner {
+
+#services_calendar_banner {
+  background-image: url('https://lh3.googleusercontent.com/pw/AP1GczMeNdLcH4SK6bM7i_6K69tcd6rBkgq9Gs4VUa3oDB3LvW0zWtaQpuLfoR_YjggC8XZFUhUk76S96Uaz35Ent9ahFXs9_INSPEX9epvTZeK4KNtv3BNTyFix2y-P8USU9UnNmQb8BDhsbShQBH--tJ3G=w680-h460-s-no-gm?authuser=0');
   background-position: center center; 
   background-size: cover;
   height: 100%;
@@ -376,41 +364,6 @@ footer a.text-light:hover {
   max-width: fit-content;
 }
 
-#services_calendar_banner {
-  background-image: url('./../img/church-images/pcea-kihumo-rironi-sunset-by-Phillip-Muriuki.png');
-}
-
-#library_banner {
-  background-image: url('./../img/2023-02-12-removebg-preview.png');
-}
-
-#work_single_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
-}
-
-#children_banner {
-  background-image: url('./../img/chalk-Image-by-mijung.jpg');/*by mijung Park from Pixabay.jpg - https://pixabay.com/photos/chalk-colorful-dust-school-supply-4829602/*/
-}
-
-#brigade_banner {
-  background-image: url('./../img/13th-Aug-23-brigade.jpg');/*by S.Rafiki - Dedication Ceremony for PCEA Kihumo Church*/
-}
-
-#youth_banner {
-  background-image: url('./../img/people-Image-by-Phan-Minh-Cuong-An.jpg');/*by Phan Minh Cuong An from Pixabay - https://pixabay.com/photos/people-group-silhouette-friends-3614311/*/
-}
-
-#pcmf_banner {
-  background-image: url('./../img/open-Image-by-Jude-Joshua.jpg');/*by Jude Joshua from Pixabay - https://pixabay.com/photos/open-bible-hand-book-religion-343297/*/
-}
-
-#tee_banner {
-  background-image: url('./../img/hand-Image-by-Célio-Silveira.jpg');/*by Célio Silveira from Pixabay - https://pixabay.com/photos/hand-bible-religion-453220/*/
-}
-
-#music_banner {
-  background-image: url('./../img/hymn-book-Image-by-Wolfgang-Heubeck.jpg');/*by Wolfgang Heubeck from Pixabay - https://pixabay.com/photos/hymn-book-a-book-to-sing-grades-468126/*/
-}
 
 /* Lazy Susan Styles */
 section.lazy-susan-container {
@@ -464,12 +417,12 @@ main#lazy-susan {
 }
 
 /* Assign offsets and individual styles */
-.lazy-susan-container a:nth-of-type(1) { --offset: 1; background-image: url('/assets/img/posters/Brigade-Week-2024-1091x1536.jpg'); background-size: cover; background-position: center;}
-.lazy-susan-container a:nth-of-type(2) { --offset: 2; background-image: url('/assets/img/posters/children-Ministry-extract-1.jpg'); background-size: cover; background-position: center;}
-.lazy-susan-container a:nth-of-type(3) { --offset: 3; background-image: url('/assets/img/posters/COMPREHENSIVE-MEDICAL-CHECKUP-FOR-MINISTERS-AND-HEAD.jpg'); background-size: cover; background-position: center;}
-.lazy-susan-container a:nth-of-type(4) { --offset: 4; background-image: url('/assets/img/posters/PCEA-churchschool-programme-2024-5.8-x-8.3-in-21-1.jpg'); background-size: cover; background-position: center;}
-.lazy-susan-container a:nth-of-type(5) { --offset: 5; background-image: url('/assets/img/posters/WhatsApp-Image-2024-05-16-at-15.04.46.jpeg'); background-size: cover; background-position: center;}
-.lazy-susan-container a:nth-of-type(6) { --offset: 6; background-image: url('/assets/img/posters/WhatsApp-Image-2024-12-06-at-11.03.45.jpeg'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(1) { --offset: 1; background-image: url('https://lh3.googleusercontent.com/pw/AP1GczNuhs7Z-N3KMudlQ-vtbRlsLU2J0-Ty_3fWOUytHUvfEl5OsZiwHn29a4zuU2Dxdv2hdEgCiVaPWQrQYiXrJvOHLs--AXJ4WBltkI-FeIMC2rOCWjium_ighOwp6HboiKzB1jaexJr1B_Yd78o7Cw3-=w483-h680-s-no-gm?authuser=0'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(2) { --offset: 2; background-image: url('https://lh3.googleusercontent.com/pw/AP1GczPaWgJ5Vgnj-pflQTiX45GVbF6Cyhi_OWU403_JEBkow5nO4SWSDE0QSpaDKc2nUxS4IXvTDyD9oCjWcYq_CsBPzB6fIssLmpzGtqc8rhLBpybW2eG9HuPpqRpV_ugwi-qTKPa9Ox-ve8bvAWIvqvZn=w467-h662-s-no-gm?authuser=0'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(3) { --offset: 3; background-image: url('https://lh3.googleusercontent.com/pw/AP1GczNe7FpIJ1xsbD2jJ_l4uSN7KfJ1TOujY4h-bYq2DLQwa986935-7mj6ScbVWUjj_vujzx44VrVLtmWPbb3Xp5i7Q30Eho2aZmS7rb0pSAYBvjBVys9NvZdJYM5Y6IqD2D0TF4nXMU387pDADs9kW-r9=w662-h662-s-no-gm?authuser=0'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(4) { --offset: 4; background-image: url('https://lh3.googleusercontent.com/pw/AP1GczPUdatOj-r27_oNW8VNYxh9_jXu36hd-nruM9N9kyloDRxF_Y5quxwrh1rMuiDCbNBLdM_Fj3NBzymbP97r2gZE0gXRABkcb9fTV184M_yOzIAaVq0PjORUGJ5-tD1BMmUwp2pj3Hf0Ue9SIqFqAM2v=w463-h662-s-no-gm?authuser=0'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(5) { --offset: 5; background-image: url('https://lh3.googleusercontent.com/pw/AP1GczPNw4eNKF0wQB5GOIscW4H3ydvoUmYxxgikJku4w0cbBkjwXK-1juKK25oaWU0xqeU_e_2J9TG1BmbBbb-hxd8UUo4eGQupoazJAiQri5tviAHPATxW4BpOYjpt8IpvCHqQ2sWjgsetYGifP7heIelS=w662-h662-s-no-gm?authuser=0'); background-size: cover; background-position: center;}
+.lazy-susan-container a:nth-of-type(6) { --offset: 6; background-image: url('https://lh3.googleusercontent.com/pw/AP1GczP4z9d7UOUhXZKXWD3Xt1F5ZtSsh2Lcmro4Ylf1QcR8GXEu2ofFCJwJRmjj6biSfa46TsPVBEJeMj-8A5KCGOK3HlR_NInebcu6O0S_v34QzkeXir7Pup8rrBS5z6xyl6TLEbNaAQDhUUVydq4j9aLW=w471-h661-s-no-gm?authuser=0'); background-size: cover; background-position: center;}
 
 /* Responsive Design */
 @media (max-width: 768px) {
