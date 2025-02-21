@@ -152,7 +152,7 @@ h2 {
 }
 /*timeline*/
 #mwaka-timeline {
-  width: 100%;
+  width: 85%;
   height: auto;
   overflow: hidden;
   margin: auto;
@@ -268,7 +268,7 @@ h2 {
 #prev {
   position: absolute;
   font-size: 70px;
-  top: 46%;
+  top: 55%;
   width: 22px;
   height: 38px;
   background-position: 0 0;
